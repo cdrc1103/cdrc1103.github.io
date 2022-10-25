@@ -18,3 +18,4 @@ So far, most of my repos here are references of my academic projects ([Academic]
   | Name   | Task | Year | Packages|Description
   |:---:   | :---: | :---: | :---:| :---
   | [Object Detection](https://github.com/cdrc1103/ObjectDetection) | Exploring the capabilities of YOLOv3 |2022|Streamlit </br> FastAPI| A web app build with a Streamlit frontend that allows the user to upload custom images for object detection. Each image submission triggers a predict workflow processed by a FastAPI backend which eventually returns the image with bounding boxes of the detected images.
+  | [NER](https://github.com/cdrc1103/NER) | Experiments with Named Entity Recognition | 2022 | Transformers |More to come |
