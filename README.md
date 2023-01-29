@@ -11,8 +11,8 @@ So far, most of my repos here are references of my academic projects ([Academic 
   | Name   | Use Case | Tech Stack |
   |:---:   | :---: | :---
   | [Speech Transcription](https://github.com/cdrc1103/SpeechTranscription) | Speech transcription using Azure cloud resources |`Azure SDK`, `Streamlit`|
-  | [Object Detection](https://github.com/cdrc1103/ObjectDetection) | FastAPI backend serving YOLO predictions on objects detected in images|`FastAPI`, `Streamlit`|
-  | [Named Entity Recognition](https://github.com/cdrc1103/NER/tree/main/BERT)| Recognize entities in text using the BERT model | `Transformers`|
+  | [Object Detection](https://github.com/cdrc1103/ObjectDetection) | FastAPI backend serving YOLO predictions on objects detected in images|`FastAPI`, `Streamlit`, 'TensorFlow`|
+  | [Named Entity Recognition](https://github.com/cdrc1103/NER/tree/main/BERT)| Recognize entities in text using the BERT model | `Transformers`, `PyTorch`|
 ## Academic Projects
 
   | Name   | Project | Year | Tech Stack | Description
