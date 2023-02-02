@@ -1,10 +1,8 @@
-# Welcome to my Github Page! 👋
+# Welcome to my Github Page! ✌️
 
-I am a software engineer passionate about deep neural networks, natural language processing, and MLOPs.
+I am a data scientist / engineer interested in Natural Language Processing and MLOPs.
 
-**Curious what to find here?**
-
-So far, most of my repos here are references of my academic projects ([Academic Projects](#academic-projects)). Currently, I am working on different demonstrators for machine learning algorithms that I am interested in ([Demonstrators](#demonstrators)).
+Below, you can find a collection of the code projects I am working on.
   
 ## Use Case Demonstrators
 
