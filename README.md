@@ -2,9 +2,14 @@
 
 I am a data scientist / engineer interested in Natural Language Processing and MLOPs.
 
-Below, you can find a collection of the code projects I am working on.
+Below, you can find a digest of the projects I am currently working on or have finished in the past.
+
+## Portfolio Optimization
+  | Name   | Description | Hosted Instance |
+  |:---:   | :---: | :---
+  | [My Portfolio](https://github.com/cdrc1103/MyPortfolio) | A dashboard to keep track of a stock portfolio's development based on the order history. | [Heroku App](https://portfolio-cdrc-1103.herokuapp.com/) <br />(Allow up to 30s to load) |
   
-## Use Case Demonstrators
+## ML Demonstrators
 
   | Name   | Use Case | Tech Stack |
   |:---:   | :---: | :---
