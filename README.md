@@ -8,7 +8,7 @@ Below, you can find a digest of the projects I am currently working on or have f
 ## Portfolio Optimization
   | Name   | Description | Hosted Instance |
   |:---:   | :---: | :---
-  | [My Portfolio](https://github.com/cdrc1103/MyPortfolio) | A dashboard to keep track of a stock portfolio's development based on the order history. | [Heroku App](https://portfolio-cdrc-1103.herokuapp.com/) <br />(Allow up to 30s to load) |
+  | [My Portfolio](https://github.com/cdrc1103/MyPortfolio) | A dashboard to keep track of a stock portfolio's development based on the order history. | [📈Streamlit App](https://cdrc1103-myportfolio-srcmy-portfolio-pp93kr.streamlit.app/)|
   
 ## ML Demonstrators
 
