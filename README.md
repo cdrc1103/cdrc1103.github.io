@@ -1,6 +1,6 @@
 # Welcome to my Github Page! ✌️
 
-I am a Data Scientist / Engineer, currently working as consultant for Enterprise Data and Analytics at Capgemini. In my current role, my work is dedicated to analyzing client data, bringing alive distributed systems, implementing data pipelines, and designing APIs. I focus on Natural Language Processing use cases and help clients to bring their AI prototypes to production by applying automation and MLOps tools.
+I am a Data Scientist / Engineer, currently working as consultant for Enterprise Data and Analytics at Capgemini. In my current role, my work is dedicated to analyzing client data, bringing alive data-driven software, implementing data pipelines and machine learning lifecycles, and designing cloud architectures. I focus on Natural Language Processing use cases and help clients to bring their AI prototypes to production by applying automation and MLOps tools.
 
 
 Below, you can find a digest of the projects I am currently working on or have finished in the past.
