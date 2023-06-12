@@ -5,12 +5,12 @@ I am a Data Scientist / Engineer, currently working as consultant for Enterprise
 
 Below, you can find a digest of the projects I am currently working on or have finished in the past.
  
-## ML Demonstrators
+## Natural Language Processing
 
   | Name   | Use Case | Tech Stack |
   |:---:   | :---: | :---
-  | [Speech Transcription](https://github.com/cdrc1103/SpeechTranscription) | Speech transcription using Azure cloud resources |`Azure SDK`, `Streamlit`|
-  | [Object Detection](https://github.com/cdrc1103/ObjectDetection) | FastAPI backend serving YOLO predictions on objects detected in images|`FastAPI`, `Streamlit`, `TensorFlow`|
+  | [Language Models](https://github.com/cdrc1103/LanguageModels) | Experimental use case development and deployment based on Generative AI |`Huggingface`|
+  | [Speech Transcription](https://github.com/cdrc1103/SpeechTranscription) | Speech transcription using Azure cognitive services |`Azure SDK`, `Streamlit`|
   | [Named Entity Recognition](https://github.com/cdrc1103/NER/tree/main/BERT)| Recognize entities in text using the BERT model | `Transformers`, `PyTorch`|
 
 ## Academic Projects
