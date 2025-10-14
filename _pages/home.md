@@ -10,9 +10,9 @@ header:
       url: "/projects/"
     - label: "Download Resume"
       url: "/assets/resume.pdf"
-excerpt: "Manager - AI & Data Science"
+excerpt: "Lead AI Consultant - GenAI Platform Architecture"
 intro: 
-  - excerpt: "Specializing in production-grade **GenAI** and **LLM** solutions • 4 years of enterprise consulting experience"
+  - excerpt: "Lead AI Consultant specializing in robust AI platforms • 4 years of enterprise consulting experience • Open to positions in Singapore"
 feature_row:
   - image_path: # Optional
     alt: "Generative AI"
