@@ -10,20 +10,19 @@ header:
       url: "/projects/"
     - label: "Download Resume"
       url: "/assets/resume.pdf"
-  caption: "AI & Data Science Manager"
-excerpt: "Leading cross-functional teams delivering production AI solutions with measurable business impact"
+excerpt: "Manager - AI & Data Science"
 intro: 
-  - excerpt: 'Specializing in **Generative AI** and **Financial Services** • 4+ years at Capgemini Invent • Currently seeking opportunities in **Singapore** 🇸🇬'
+  - excerpt: "Specializing in production-grade **GenAI** and **LLM** solutions • 4 years of enterprise consulting experience"
 feature_row:
-  - image_path: /assets/images/genai-icon.png # Optional
+  - image_path: # Optional
     alt: "Generative AI"
     title: "Generative AI Expertise"
     excerpt: "Production-grade LLM applications, RAG systems, and AI platforms delivering measurable EBIT impact in Financial Services"
-  - image_path: /assets/images/leadership-icon.png # Optional
+  - image_path: # Optional
     alt: "Leadership"
     title: "Team Leadership"
     excerpt: "Leading cross-functional teams, mentoring data scientists, and managing stakeholder relationships at C-level"
-  - image_path: /assets/images/mlops-icon.png # Optional
+  - image_path: # Optional
     alt: "MLOps"
     title: "Production ML Systems"
     excerpt: "End-to-end AI solution delivery from ideation to deployment, with focus on scalability and business outcomes"
