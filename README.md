@@ -134,8 +134,6 @@ git commit -m "Update content"
 git push origin main
 ```
 
-## Key Sections
-
 ### Home Page
 - Hero section with call-to-action buttons
 - Feature highlights (Generative AI, Leadership, MLOps)
@@ -193,7 +191,6 @@ Content is © 2025 Cedric Issel. Site structure and code are based on the [Minim
 
 - **LinkedIn:** [cedric-issel](https://linkedin.com/in/cedric-issel)
 - **GitHub:** [@cdrc1103](https://github.com/cdrc1103)
-- **Email:** cedric.issel@gmail.com
 
 ---
 

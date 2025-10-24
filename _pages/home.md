@@ -5,34 +5,32 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /assets/images/header-bg.jpg # Optional: add a hero image
-  actions:
-    - label: "View Projects"
-      url: "/projects/"
-    - label: "Download Resume"
-      url: "/assets/resume.pdf"
-excerpt: "Lead AI Consultant - AI Platform Architecture"
+  # actions:
+  #   - label: "View Recent Projects"
+  #     url: "/projects/"
+excerpt: "Senior Consultant - GenAI & ML Platforms"
 intro: 
-  - excerpt: "Lead AI Consultant specializing in robust AI platforms • 4 years of enterprise consulting experience • Open to positions in Singapore"
+  - excerpt: "Senior Consultant specialized in planning and delivering robust GenAI & ML platforms • 4 years of enterprise consulting experience • Open to opportunities in Singapore"
 feature_row:
   - image_path: # Optional
     alt: "Generative AI"
-    title: "Generative AI Expertise"
-    excerpt: "Production-grade LLM applications, RAG systems, and AI platforms delivering measurable EBIT impact in Financial Services"
+    title: "Generative AI"
+    excerpt: "Deep knowledge about creating production LLM applications, RAG, and Agentic AI systems that deliver measurable EBIT impact."
   - image_path: # Optional
     alt: "Leadership"
     title: "Team Leadership"
-    excerpt: "Leading cross-functional teams, mentoring data scientists, and managing stakeholder relationships at C-level"
+    excerpt: "Experienced in leading cross-functional teams, mentoring junior team members, and managing stakeholder communication."
   - image_path: # Optional
-    alt: "MLOps"
-    title: "Production ML Systems"
-    excerpt: "End-to-end AI solution delivery from ideation to deployment, with focus on scalability and business outcomes"
+    alt: "Software Development"
+    title: "Software Development"
+    excerpt: "Skilled in end-to-end software solution delivery from ideation to production deployment, with focus on scalability and business outcomes."
 ---
 
 {% include feature_row id="intro" type="center" %}
 
 {% include feature_row %}
 
-## 🎯 Key Achievements
+## Key Achievements
 
 - 🚀 **40% efficiency gain** deploying Gen AI platform in tier-1 financial institution
 - 💰 **€1.5M+ cost savings** through AI-driven process automation
@@ -41,7 +39,7 @@ feature_row:
 
 ---
 
-## 💼 Recent Projects
+## Recent Projects
 
 {% assign portfolio_items = site.portfolio | limit: 3 %}
 {% for item in portfolio_items %}
