@@ -6,9 +6,9 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale: "en-US"
 title: "Cedric Issel"
 title_separator: "-"
-subtitle: "Senior Consultant"
+subtitle: "Senior AI Engineer"
 name: "Cedric Issel"
-description: "Senior Consultant | GenAI & ML platforms | 4 Years of Enterprise Consulting Experience | Open to Positions in Singapore"
+description: "Senior AI Engineer | GenAI & ML platforms | 4 Years of Enterprise Consulting Experience | Open to Positions in Singapore"
 url: "https://cdrc1103.github.io"
 baseurl: ""
 repository: "cdrc1103/cdrc1103.github.io"
@@ -20,7 +20,7 @@ masthead_title: # overrides the website title displayed in the masthead
 author:
   name: "Cedric Issel"
   avatar: "/assets/images/bio-photo.jpg" # Add your photo here
-  bio: "Senior Consultant specializing in robust GenAI & ML platforms"
+  bio: "Senior AI Engineer specializing in robust GenAI & ML platforms"
   location: "Munich → Singapore"
   links:
     # - label: "Email"

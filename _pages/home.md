@@ -8,10 +8,10 @@ header:
   # actions:
   #   - label: "View Recent Projects"
   #     url: "/projects/"
-excerpt: "Senior Consultant - GenAI & ML Platforms"
+excerpt: "Senior AI Engineer - GenAI & ML Platforms"
 intro: 
-  - excerpt: "Senior Consultant specialized in planning and delivering robust GenAI & ML platforms • 4 years of enterprise consulting experience • Open to opportunities in Singapore"
-feature_row:
+  - excerpt: "Senior AI Engineer specialized in planning and delivering robust GenAI & ML platforms • 4 years of enterprise consulting experience • Open to opportunities in Singapore"
+sfeature_row:
   - image_path: # Optional
     alt: "Generative AI"
     title: "Generative AI"
