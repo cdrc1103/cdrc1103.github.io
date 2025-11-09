@@ -9,8 +9,9 @@ header:
   #   - label: "View Recent Projects"
   #     url: "/projects/"
 excerpt: "Lead AI Consultant - GenAI Solution Architecture & Delivery"
-intro: 
-  - excerpt: "*With 4 years delivering production AI systems for enterprise clients, I specialize in the technical coordination, integration planning, and team alignment that turns AI prototypes into business value.*"
+
+intro:
+    excerpt: "*With 4 years delivering production AI systems for enterprise clients, I specialize in the technical coordination, integration planning, and team alignment that turns AI prototypes into business value.*"
 feature_row:
   - title: "Production GenAI Delivery"
     excerpt: "Expert in **industrializing LLM applications** (RAG, Agentic AI) from prototype to production on Azure, Databricks and other clouds, ensuring scalability and measurable EBIT impact."
@@ -38,7 +39,7 @@ feature_row:
 ## Key Achievements
 - **3 production GenAI solutions** delivered to enterprise clients in 2024/2025
 - **Coordinated 4 parallel use case squads (50 people)** unblocking dependencies, driving decisions, and aligning development with management objectives
-- **Managed and developed** 3 junior consultants, providing technical mentorship and career guidance
+- **Managed and developed 3 junior consultants**, providing technical mentorship and career guidance
 - **€1.5M+ in attributed sales** generated through business development activities in 2025
 
 ## Technical Expertise

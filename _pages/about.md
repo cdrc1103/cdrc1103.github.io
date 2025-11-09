@@ -11,8 +11,6 @@ excerpt: "Lead AI Consultant with 4 years delivering production GenAI solutions 
 - I coordinate solution delivery from architecture planning through implementation to deployment and target platform integration. 
 - Familiar with industries like Financial Services, Retail, Automotive, and Government.
 
-[View Contact Info](/contact/){: .btn .btn--primary}
-
 ## What I Do
 
 **Technical Coordination**
