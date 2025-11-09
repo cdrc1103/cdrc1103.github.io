@@ -10,8 +10,8 @@ subtitle: "Lead AI Consultant | GenAI Solution Architecture & Delivery"
 name: "Cedric Issel"
 description: "Lead AI Consultant | GenAI Solution Architecture & Delivery"
 url: "https://cdrc1103.github.io"
-baseurl: ""
-repository: "cdrc1103/cdrc1103.github.io"
+baseurl: "/cdrc1103"
+repository: "cdrc1103/cdrc1103"
 teaser: # path of fallback teaser image
 logo: # path of logo image to display in the masthead
 masthead_title: # overrides the website title displayed in the masthead
