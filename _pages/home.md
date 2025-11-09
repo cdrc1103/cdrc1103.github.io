@@ -2,16 +2,16 @@
 layout: splash
 permalink: /
 header:
-  overlay_color: "#000"
+  overlay_color: "#0a0e27"
   overlay_filter: "0.5"
-  overlay_image: # Optional: add a hero image
+  overlay_image: "assets/images/background-image3.jpg"
   # actions:
   #   - label: "View Recent Projects"
   #     url: "/projects/"
 excerpt: "Lead AI Consultant - GenAI Solution Architecture & Delivery"
 
 intro:
-    excerpt: "*With 4 years delivering production AI systems for enterprise clients, I specialize in the technical coordination, integration planning, and team alignment that turns AI prototypes into business value.*"
+  - excerpt: "*With 4 years of experience in delivering production AI systems for enterprise clients, I specialize in the technical coordination, integration planning, and team alignment that turns AI prototypes into business value.*"
 feature_row:
   - title: "Production GenAI Delivery"
     excerpt: "Expert in **industrializing LLM applications** (RAG, Agentic AI) from prototype to production on Azure, Databricks and other clouds, ensuring scalability and measurable EBIT impact."
@@ -43,10 +43,10 @@ feature_row:
 - **€1.5M+ in attributed sales** generated through business development activities in 2025
 
 ## Technical Expertise
-**GenAI & LLM:** Production RAG systems, Agentic AI, LLM Validation, Prompt Engineering  
-**Cloud Platforms:** Azure, Databricks, MLOps Pipelines, Microservices Architecture  
-**Leadership:** Cross-functional Team Coordination, Stakeholder Communication, Technical Mentoring  
-**Industries:** Retail, Automotive, Financial Services, Public Sector
+- **GenAI & LLM:** Production RAG systems, Agentic AI, LLM Validation, Prompt Engineering  
+- **Cloud Platforms:** Azure, Databricks, MLOps Pipelines, Microservices Architecture  
+- **Leadership:** Cross-functional Team Coordination, Stakeholder Communication, Technical Mentoring  
+- **Industries:** Retail, Automotive, Financial Services, Public Sector
 
 ## Exploring Opportunities in Singapore's AI Ecosystem
 

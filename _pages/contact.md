@@ -18,9 +18,4 @@ I'm exploring opportunities in Singapore's AI ecosystem and open to discussing r
 **Target Location:** Singapore  
 **Availability:** 2-3 months notice period  
 **Visa:** Require Employment Pass sponsorship  
-**Target Roles:** Lead AI Consultant, Senior AI Engineer  
-**Target Salary:** SGD 140,000-160,000
-
----
-
-**Response time:** Within 24-48 hours
+**Target Roles:** Lead AI Consultant, Senior AI Engineer
