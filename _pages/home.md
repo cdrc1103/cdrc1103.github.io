@@ -56,4 +56,4 @@ enterprise clients. Singapore's strategic position in Asia-Pacific
 and significant AI investments align with my career goals in 
 building production-scale AI systems.
 
-<a href="/contact/" class="btn btn--success btn--large">Let's Connect</a>
+<a href="{{ site.baseurl }}/contact/" class="btn btn--success btn--large">Let's Connect</a>
