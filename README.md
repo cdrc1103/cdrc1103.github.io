@@ -1,25 +1,199 @@
-# Welcome to my Github Page! ✌️
+# Cedric Issel - Professional Portfolio
 
-I am a Data Scientist / Engineer, currently working as consultant for Enterprise Data and Analytics at Capgemini. In my current role, my work is dedicated to analyzing client data, bringing alive data-driven software, implementing data pipelines and machine learning lifecycles, and designing cloud architectures. I focus on Natural Language Processing use cases and help clients to bring their AI prototypes to production by applying automation and MLOps tools.
+A professional portfolio website built with Jekyll and the Minimal Mistakes theme, showcasing AI/ML leadership experience and projects in Generative AI and Financial Services.
 
+**Live Site:** [https://cdrc1103.github.io](https://cdrc1103.github.io)
 
-Below, you can find a digest of the projects I am currently working on or have finished in the past.
- 
-## Natural Language Processing
+## About
 
-  | Name   | Use Case | Tech Stack |
-  |:---:   | :---: | :---
-  | [Speech Transcription](https://github.com/cdrc1103/SpeechTranscription) | Speech transcription using Azure cognitive services |`Azure SDK`, `Streamlit`|
-  | [Named Entity Recognition](https://github.com/cdrc1103/NER/tree/main/BERT)| Recognize entities in text using the BERT model | `Transformers`, `PyTorch`|
+This portfolio website highlights:
+- **AI & Data Science Management** experience
+- **Generative AI** projects with measurable business impact
+- **Leadership** in cross-functional teams
+- **Production ML Systems** in Financial Services
+- Current job search focus: **Singapore**
 
-## Academic Projects
+## Tech Stack
 
-  | Name   | Project | Year | Tech Stack | Description
-  |:---:   | :---: | :---: | :---: |:---
-  | [Patent Classifier](https://github.com/cdrc1103/PatentClassifier) | Multi-Label Patent Classification with Deep Neural Networks |2021| `TensorFlow`, `Transformers` |A comprehensive study to identify, implement and evaluate suitable approaches for the classification of patents using different neural network architectures like CNN, RNN, and Transformers. A domain-specific data set of 200.000 patent documents is used.
-  | [Crowdedness Prediction](https://github.com/cdrc1103/CrowdednessPrediction) | Crowdedness Prediction in Public Transport Under Covid-19 |2020|`PyTorch`| During Covid-19 pandemic social distancing in public transport is an important matter to prevent spreading the virus. Thus, it would be beneficial to know when and where there are bottlenecks in the public transport network. Our goal is to reduce the capacity problem by predicting the crowdedness for a specified time interval with RNNs.
+- **Static Site Generator:** [Jekyll](https://jekyllrb.com/) 3.10.0
+- **Theme:** [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) 4.24.0 (remote theme)
+- **Hosting:** GitHub Pages
+- **Language:** Ruby 3.2.0
 
-## Trading
-  | Name   | Description |
-  |:---:   | :---: |
-  | [My Portfolio](https://github.com/cdrc1103/MyPortfolio) | A dashboard to keep track of a stock portfolio's development based on the order history. |
+## Project Structure
+
+```
+.
+├── _config.yml           # Site configuration and theme settings
+├── _data/
+│   └── navigation.yml    # Site navigation menu
+├── _pages/               # Main site pages
+│   ├── home.md          # Landing page with splash layout
+│   ├── about.md         # About/bio page
+│   ├── projects.md      # Projects showcase
+│   ├── experience.md    # Professional experience
+│   └── contact.md       # Contact information
+├── portfolio/            # Project case studies
+│   └── genai-platform.md
+├── assets/               # Images, CSS, JS
+├── Gemfile              # Ruby dependencies
+└── README.md            # This file
+```
+
+## Local Development
+
+### Prerequisites
+
+- Ruby 3.2.0 or higher
+- Bundler gem
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/cdrc1103/cdrc1103.github.io.git
+   cd cdrc1103.github.io
+   ```
+
+2. **Install dependencies**
+   ```bash
+   bundle install
+   ```
+
+3. **Run local server**
+   ```bash
+   bundle exec jekyll serve
+   ```
+
+4. **View the site**
+   - Open your browser to [http://localhost:4000](http://localhost:4000)
+   - The site will auto-rebuild on file changes
+
+### Build for Production
+
+```bash
+bundle exec jekyll build
+```
+
+The production-ready site will be generated in the `_site/` directory.
+
+## Configuration
+
+### Site Settings
+
+Edit [_config.yml](_config.yml) to customize:
+- Site title, description, and URL
+- Author information and bio
+- Social media links (LinkedIn, GitHub, Email)
+- Theme skin (default, dark, air, etc.)
+- SEO settings
+
+### Navigation
+
+Edit [_data/navigation.yml](_data/navigation.yml) to modify the main navigation menu.
+
+### Content Pages
+
+- **Home Page:** [_pages/home.md](_pages/home.md) - Splash layout with hero section
+- **About:** [_pages/about.md](_pages/about.md)
+- **Projects:** [_pages/projects.md](_pages/projects.md)
+- **Experience:** [_pages/experience.md](_pages/experience.md)
+- **Contact:** [_pages/contact.md](_pages/contact.md)
+
+### Portfolio Projects
+
+Add new project case studies in the `portfolio/` directory. Each project should have:
+- Front matter with title, excerpt, header images
+- Sidebar metadata (role, duration, team size)
+- Detailed project description
+
+## Features
+
+- **Responsive design** optimized for all devices
+- **Minimal Mistakes theme** with professional styling
+- **Portfolio collection** for project showcases
+- **SEO optimized** with jekyll-seo-tag
+- **Pagination** for scalable content
+- **Category & tag archives**
+- **Social media integration**
+
+## Deployment
+
+This site is configured for **automatic deployment** via GitHub Pages:
+
+1. Push changes to the `main` branch
+2. GitHub Actions automatically builds and deploys
+3. Site is live at `https://cdrc1103.github.io`
+
+### Manual Deployment
+
+If needed, you can deploy manually:
+```bash
+git add .
+git commit -m "Update content"
+git push origin main
+```
+
+### Home Page
+- Hero section with call-to-action buttons
+- Feature highlights (Generative AI, Leadership, MLOps)
+- Key achievements with metrics
+- Recent projects preview
+- Job search status (Singapore focus)
+
+### Projects
+- Portfolio collection showcasing:
+  - Gen AI Platform for Financial Services
+  - Additional projects (add more in `portfolio/`)
+
+### Experience
+- Professional background
+- Leadership roles
+- Technical expertise
+
+## Customization Tips
+
+1. **Add your photo:** Place image at `/assets/images/bio-photo.jpg`
+2. **Add header images:** Use `/assets/images/header-bg.jpg` for hero sections
+3. **Update resume:** Place PDF at `/assets/resume.pdf`
+4. **Customize colors:** Modify theme skin in `_config.yml`
+5. **Add projects:** Create new `.md` files in `portfolio/` directory
+
+## Performance
+
+- Static site generation for fast load times
+- SCSS compression enabled
+- Jekyll caching for faster builds
+- Optimized for GitHub Pages CDN
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers
+
+## Contributing
+
+This is a personal portfolio site. If you'd like to use this as a template:
+
+1. Fork the repository
+2. Update `_config.yml` with your information
+3. Customize content in `_pages/` and `portfolio/`
+4. Deploy to your own GitHub Pages
+
+## License
+
+Content is © 2025 Cedric Issel. Site structure and code are based on the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-mistakes), licensed under MIT.
+
+## Contact
+
+- **LinkedIn:** [cedric-issel](https://linkedin.com/in/cedric-issel)
+- **GitHub:** [@cdrc1103](https://github.com/cdrc1103)
+
+---
+
+**Status:** Actively maintained | Open to opportunities in Singapore
+
+*Built with love using Jekyll and Minimal Mistakes*
