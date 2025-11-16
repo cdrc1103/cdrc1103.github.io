@@ -1,0 +1,26 @@
+---
+title: AI Customer Support
+subtitle: Conversational AI
+layout: default
+modal-id: 7
+date: 2024-07-01
+# img: chatbot.png
+thumbnail: chatbot-thumbnail.png
+alt: AI Chatbot
+start-date: Apr. 2024
+end-date: Sep. 2024
+client: Telecommunications
+category: AI/ML
+role: AI Solutions Architect
+impact: Developed intelligent chatbot with NLP and multi-channel deployment capabilities
+kpi: 70% tier-1 query automation & €500K annual savings
+description: Developed intelligent customer support chatbot handling 70% of tier-1 support queries. Integrated NLP models, multi-channel deployment, and seamless human handoff. Reduced support costs by €500K annually.
+tech:
+  - python
+  - openai
+  - langchain
+  - fastapi
+  - postgresql
+  - docker
+
+---

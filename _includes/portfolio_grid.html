@@ -1,0 +1,40 @@
+<!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Portfolio</h2>
+                </div>
+            </div>
+            <div class="portfolio-scroll-wrapper">
+                <div class="portfolio-scroll-container">
+                {% for post in site.posts %}
+                    <div class="portfolio-card">
+                        <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-card-content">
+                                <div class="portfolio-card-header">
+                                    <h4>{{ post.title }}</h4>
+                                    <span class="project-date">{{ post.start-date }} - {{ post.end-date }}</span>
+                                    <p class="project-role">{{ post.role }}</p>
+                                    <p class="project-impact">{{ post.impact }}</p>
+                                    <p class="project-kpi"><i class="fa fa-check-circle"></i> {{ post.kpi }}</p>
+                                </div>
+                                <div class="portfolio-tech-stack">
+                                    {% for tech in post.tech %}
+                                    <div class="tech-icon">
+                                        <img src="https://cdn.simpleicons.org/{{ tech }}" alt="{{ tech }}">
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,24 @@
+timeline:
+  - period: "2024-Present"
+    title: "Lead AI Consultant"
+    description: "Leading technical teams and managing cross-functional delivery. Coordinating GenAI solutions from architecture planning through deployment, delivering measurable business impact for tier-1 clients."
+    # image: "img/about/4.jpg"
+    inverted: true
+
+  - period: "2022-2023"
+    title: "GenAI Specialization"
+    description: "Specialized in Generative AI solutions, delivering production LLM applications with RAG architecture, Agentic AI systems, and comprehensive validation frameworks for enterprise use cases."
+    # image: "img/about/3.jpg"
+    inverted: false
+
+  - period: "2020-2021"
+    title: "Capgemini Invent"
+    description: "Started career as AI Consultant at Capgemini Invent. Began working with enterprise clients across Financial Services, Retail, Automotive, and Government sectors."
+    # image: "img/about/2.jpg"
+    inverted: true
+
+  - period: "2018-2020"
+    title: "Academic Foundation"
+    description: "Earned Master's degree in Engineering and Management from Technical University of Hamburg, Germany. Built strong foundation in engineering principles and business strategy."
+    # image: "img/about/1.jpg"
+    inverted: false

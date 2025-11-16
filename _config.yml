@@ -1,173 +1,37 @@
-# Theme Settings
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+url: https://cdrc1103.github.io
+baseurl: ""
 
-# Site Settings
-locale: "en-US"
-title: "Cedric Issel"
-title_separator: "-"
-subtitle: "Lead AI Consultant | GenAI Solution Architecture & Delivery"
-name: "Cedric Issel"
-description: "Lead AI Consultant | GenAI Solution Architecture & Delivery"
-url: "https://cdrc1103.github.io"
-baseurl: "/cdrc1103"
-repository: "cdrc1103/cdrc1103"
-teaser: # path of fallback teaser image
-logo: # path of logo image to display in the masthead
-masthead_title: # overrides the website title displayed in the masthead
-atom_feed:
-  hide: true
+# Site settings
+title: Cedric Issel
+email: cedric.issel@gmail.com
+description: "Lead AI Consultant specializing in GenAI Solution Architecture & Delivery. 4 years of experience delivering production AI solutions for enterprise clients."
 
-# Site Author
-author:
-  name: "Cedric Issel"
-  avatar: "/assets/images/bio-photo.jpg" # Add your photo here
-  bio: "Lead AI Consultant"
-  location: "Munich, Germany"
-  links:
-    # - label: "Email"
-    #   icon: "fas fa-fw fa-envelope-square"
-    #   url: "mailto:cedric.issel@gmail.com"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/cedric-issel"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/cdrc1103"
+# Team names, titles and social links
+people:
+- name: Cedric Issel
+  pic: 1
+  position: Lead AI Consultant
+  social:
+    - title: linkedin
+      url: https://linkedin.com/in/cedric-issel
+    - title: github
+      url: https://github.com/cdrc1103
 
-# Site Footer
-footer:
-  links:
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/cedric-issel"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/cdrc1103"
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: linkedin
+    url: https://linkedin.com/in/cedric-issel
+  - title: github
+    url: https://github.com/cdrc1103
 
-# Reading Files
-include:
-  - .htaccess
-  - _pages
-exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - vendor
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
-  - node_modules
-  - package.json
-  - Rakefile
-  - README
-  - tmp
+# Postal address (add as many lines as necessary)
+address:
+  - line: Munich, Germany
 
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
-# Conversion
+# Build settings
 markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-# Markdown Processing
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed
-
-# Outputting
-permalink: /:categories/:title/
-paginate: 5
-paginate_path: /page:num/
-timezone: Europe/Berlin
+permalink: pretty
 
 # Plugins
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-include-cache
-
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-include-cache
-
-# Archives
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-
-# HTML Compression
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: false
-      share: true
-      related: true
-  # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: false
-      share: true
-
-# Collections
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:path/

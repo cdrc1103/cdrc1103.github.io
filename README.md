@@ -6,29 +6,34 @@ Personal portfolio website showcasing AI/ML leadership experience and projects.
 
 ## Tech Stack
 
-- **Static Site Generator:** [Jekyll](https://jekyllrb.com/) 3.10.0
-- **Theme:** [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) 4.24.0 (remote theme)
+- **Static Site Generator:** Jekyll 3.10.0
 - **Hosting:** GitHub Pages
-- **Language:** Ruby 3.2.0
+- **Style:** Custom Agency-style theme
 
 ## Project Structure
 
 ```
 .
-├── _config.yml           # Site configuration and theme settings
+├── _config.yml              # Site configuration
 ├── _data/
-│   └── navigation.yml    # Site navigation menu
-├── _pages/               # Main site pages
-│   ├── home.md          # Landing page with splash layout
-│   ├── about.md         # About/bio page
-│   ├── projects.md      # Projects showcase
-│   ├── experience.md    # Professional experience
-│   └── contact.md       # Contact information
-├── portfolio/            # Project case studies
-│   └── genai-platform.md
-├── assets/               # Images, CSS, JS
-├── Gemfile              # Ruby dependencies
-└── README.md            # This file
+│   ├── experiences.yml      # Professional experience data
+│   └── template.yml         # Site template configuration
+├── _includes/               # HTML components
+│   ├── header.html
+│   ├── about.html
+│   ├── experience.html
+│   ├── portfolio_grid.html
+│   ├── modals.html
+│   ├── contact.html
+│   └── footer.html
+├── _layouts/
+│   └── default.html         # Main page layout
+├── _posts/                  # Portfolio projects (8 markdown files)
+├── css/                     # Stylesheets (Bootstrap, Font Awesome)
+├── js/                      # JavaScript (jQuery, Bootstrap)
+├── img/                     # Images
+├── index.html               # Home page
+└── style.css                # Custom styles
 ```
 
 ## Local Development
@@ -42,3 +47,9 @@ bundle exec jekyll serve
 
 # View at http://localhost:4000
 ```
+
+## Content Management
+
+- **Portfolio Projects:** Add markdown files to `_posts/` with front matter (title, subtitle, layout, modal-id)
+- **Experience:** Edit `_data/experiences.yml`
+- **Personal Info:** Update `_config.yml`

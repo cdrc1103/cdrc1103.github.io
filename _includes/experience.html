@@ -1,0 +1,133 @@
+<!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Experience</h2>
+                    <h3 class="section-subheading text-muted">My journey in AI and technology</h3>
+                </div>
+            </div>
+
+            <!-- Expertise Grid -->
+            <div class="row expertise-grid-wrapper" style="margin-bottom: 60px;">
+                <!-- GenAI & LLM -->
+                <div class="col-lg-3 col-md-6 col-sm-6 expertise-category-compact">
+                    <h4 class="service-heading">GenAI & LLM</h4>
+                    <div class="expertise-icons-compact">
+                        <div class="expertise-icon">
+                            <img src="https://cdn.simpleicons.org/python" alt="Python">
+                            <span class="tooltip-text">Python</span>
+                        </div>
+                        <div class="expertise-icon">
+                            <img src="https://cdn.simpleicons.org/openai" alt="OpenAI">
+                            <span class="tooltip-text">OpenAI</span>
+                        </div>
+                        <div class="expertise-icon">
+                            <img src="https://cdn.simpleicons.org/anthropic" alt="Anthropic">
+                            <span class="tooltip-text">Anthropic Claude</span>
+                        </div>
+                        <div class="expertise-icon">
+                            <img src="https://cdn.simpleicons.org/langchain" alt="LangChain">
+                            <span class="tooltip-text">LangChain</span>
+                        </div>
+                        <div class="expertise-icon">
+                            <img src="https://cdn.simpleicons.org/huggingface" alt="Hugging Face">
+                            <span class="tooltip-text">Hugging Face</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud Platforms -->
+                <div class="col-lg-3 col-md-6 col-sm-6 expertise-category-compact">
+                    <h4 class="service-heading">Cloud Platforms</h4>
+                    <div class="expertise-icons-compact">
+                        <div class="expertise-icon">
+                            <img src="https://cdn.simpleicons.org/microsoftazure" alt="Azure">
+                            <span class="tooltip-text">Azure</span>
+                        </div>
+                        <div class="expertise-icon">
+                            <img src="https://cdn.simpleicons.org/databricks" alt="Databricks">
+                            <span class="tooltip-text">Databricks</span>
+                        </div>
+                        <div class="expertise-icon">
+                            <img src="https://cdn.simpleicons.org/mlflow" alt="MLflow">
+                            <span class="tooltip-text">MLflow</span>
+                        </div>
+                        <div class="expertise-icon">
+                            <img src="https://cdn.simpleicons.org/docker" alt="Docker">
+                            <span class="tooltip-text">Docker</span>
+                        </div>
+                        <div class="expertise-icon">
+                            <img src="https://cdn.simpleicons.org/kubernetes" alt="Kubernetes">
+                            <span class="tooltip-text">Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leadership -->
+                <div class="col-lg-3 col-md-6 col-sm-6 expertise-category-compact">
+                    <h4 class="service-heading">Leadership</h4>
+                    <div class="expertise-icons-compact">
+                        <div class="expertise-icon">
+                            <i class="fa fa-users"></i>
+                            <span class="tooltip-text">Team Coordination</span>
+                        </div>
+                        <div class="expertise-icon">
+                            <i class="fa fa-comments"></i>
+                            <span class="tooltip-text">Stakeholder Communication</span>
+                        </div>
+                        <div class="expertise-icon">
+                            <i class="fa fa-graduation-cap"></i>
+                            <span class="tooltip-text">Technical Mentoring</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industries -->
+                <div class="col-lg-3 col-md-6 col-sm-6 expertise-category-compact">
+                    <h4 class="service-heading">Industries</h4>
+                    <div class="expertise-icons-compact">
+                        <div class="expertise-icon">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="tooltip-text">Retail</span>
+                        </div>
+                        <div class="expertise-icon">
+                            <i class="fa fa-car"></i>
+                            <span class="tooltip-text">Automotive</span>
+                        </div>
+                        <div class="expertise-icon">
+                            <i class="fa fa-university"></i>
+                            <span class="tooltip-text">Financial Services</span>
+                        </div>
+                        <div class="expertise-icon">
+                            <i class="fa fa-building"></i>
+                            <span class="tooltip-text">Public Sector</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        {% for experience in site.data.experiences.timeline %}
+                        <li{% if experience.inverted %} class="timeline-inverted"{% endif %}>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="{{ experience.image }}" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>{{ experience.period }}</h4>
+                                    <h4 class="subheading">{{ experience.title }}</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">{{ experience.description }}</p>
+                                </div>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
