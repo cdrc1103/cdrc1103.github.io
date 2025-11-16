@@ -2,7 +2,7 @@
 
 Personal portfolio website showcasing AI/ML leadership experience and projects.
 
-**Live Site:** [https://cdrc1103.github.io/cdrc1103/](https://cdrc1103.github.io/cdrc1103/)
+**Live Site:** [https://cdrc1103.github.io/](https://cdrc1103.github.io/)
 
 ## Tech Stack
 
