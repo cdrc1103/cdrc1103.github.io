@@ -47,16 +47,35 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Lead AI Consultant</div>
-                <div class="intro-heading">GenAI Solution Architecture & Delivery</div>
-                <a href="#about" class="page-scroll btn btn-xl">Learn More</a>
+            <div class="header-content">
+                <!-- Left Column: Text -->
+                <div class="header-left">
+                    <div class="header-position">Lead AI Consultant</div>
+                    <div class="header-specialization">Gen AI Solution Architecture & Delivery</div>
+                    <a href="#about" class="page-scroll btn btn-xl">Learn More</a>
+                </div>
+
+                <!-- Right Column: Image & KPIs -->
+                <div class="header-right">
+                    <div class="bio-image-container">
+                        <img src="{{ site.baseurl }}/img/team/1.jpg" alt="Profile" class="bio-image">
+                    </div>
+
+                    <div class="kpi-boxes">
+                        <div class="kpi-box">
+                            <div class="kpi-number">> 4</div>
+                            <div class="kpi-label">Years Enterprise Consulting</div>
+                        </div>
+                        <div class="kpi-box">
+                            <div class="kpi-number">> 50</div>
+                            <div class="kpi-label">Developers Tech Lead Role</div>
+                        </div>
+                        <div class="kpi-box">
+                            <div class="kpi-number">> 2000</div>
+                            <div class="kpi-label">Users Facing AI Projects</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
-<!--
-        {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
- -->
-
