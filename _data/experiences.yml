@@ -1,0 +1,35 @@
+timeline:
+  - period: "Jan 2025-Present"
+    title: "Manager - AI & Data Solutions"
+    bullets:
+      - "Leading technical delivery of production AI platform for 500+ civil servant users, steering 50+ developers and 20+ microservices"
+      - "Delivered AI-powered content generation platform on Azure for retail with up to 90% cost reduction"
+      - "Conceptualizing and implementing architecture for compliance, scalability, and seamless cloud integration"
+    image: "img/capgemini.png"
+    inverted: true
+
+  - period: "Jul 2023-Dec 2024"
+    title: "Senior Consultant - AI Engineering"
+    bullets:
+      - "Industrialized 3 Machine Learning solutions from prototype to production on Azure and Databricks"
+      - "Deployed user-facing ML solutions at scale"
+      - "Drove software engineering best practices, establishing CI/CD pipelines, code review & release standards, and MLOps workflows"
+    image: "img/capgemini.png"
+    inverted: false
+
+  - period: "Oct 2021-Jul 2023"
+    title: "Consultant - AI Engineering"
+    bullets:
+      - "Built internal AI prototyping platform enabling rapid POC development, reducing concept-to-demo time from days to hours"
+      - "Developed production ML solution facing ~100 users"
+      - "Implemented end-to-end pipelines from data ingestion through model deployment"
+    image: "img/capgemini.png"
+    inverted: true
+
+  - period: "Jan 2019-Dec 2021"
+    title: "Academic Foundation"
+    bullets:
+      - "MSc in International Industrial Engineering"
+      - "Hamburg University of Technology, Germany"
+    image: "img/tuhh.png"
+    inverted: false
