@@ -1,0 +1,21 @@
+items:
+  - icon: "fa-cogs"
+    title: "Production GenAI Delivery"
+    bullets:
+      - "<strong>Industrialize LLM applications</strong> (RAG, Agentic AI)"
+      - "Azure, Databricks, multi-cloud deployments"
+      - "Prototype to production with measurable EBIT impact"
+
+  - icon: "fa-cloud"
+    title: "Technical Leadership"
+    bullets:
+      - "<strong>Coordinate cross-functional</strong> solution delivery"
+      - "Translate executive requirements to technical plans"
+      - "Drive implementation across teams"
+
+  - icon: "fa-users"
+    title: "Solution Architecture"
+    bullets:
+      - "<strong>Design end-to-end AI systems</strong>"
+      - "Define non-functional requirements & integration strategies"
+      - "Ensure production-grade quality for enterprise GenAI"

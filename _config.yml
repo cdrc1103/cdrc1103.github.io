@@ -4,13 +4,13 @@ baseurl: ""
 # Site settings
 title: Cedric Issel
 email: cedric.issel@gmail.com
-description: "Lead AI Consultant specializing in GenAI Solution Architecture & Delivery. 4 years of experience delivering production AI solutions for enterprise clients."
+description: "Lead AI Engineer with 4+ years delivering production AI systems in the cloud for international clients. Proven track record architecting LLM-powered solutions (RAG, validation, custom guardrails) and leading cross-functional, multi-cultural teams (up to 50 developers). Specialized in scaling AI prototypes to production-grade solutions with measurable business impact in highly regulated domains."
 
 # Team names, titles and social links
 people:
 - name: Cedric Issel
   pic: 1
-  position: Lead AI Consultant
+  position: Lead AI Engineer
   social:
     - title: linkedin
       url: https://linkedin.com/in/cedric-issel
