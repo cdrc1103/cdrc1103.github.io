@@ -15,18 +15,30 @@ role: Delivery Architect
 impact: Designed architecture for multiple government agencies serving 500+ civil servants
 kpi: 50+ developers coordinated across UX, Frontend, Backend, and Operations teams
 description: |
-  - Designed scalable AI platform for digital planning and approval procedures in high-security, low-risk tolerance environment
-  - Implemented data governance framework compliant with public sector audit requirements
-  - Aligned technical roadmaps across multiple teams serving 500+ civil servants
+  - Architecting AI-driven document processing platform for multiple government agencies, serving 500+ civil servants
+  - Designing for zero-risk tolerance: security compliance, audit trails, and data sovereignty in regulated public sector environment
+  - Defining technical blueprints for scalability, performance, and compliance with government IT standards
+  - Aligning cross-functional roadmaps across UX, Frontend, Backend, and Operations teams (50+ developers)
 tech:
   - python
-  - azure
   - docker
-  - databricks
+  - terraform
+  - grafana
+  - neo4j
+  - langchain
+  - fastapi
+  - mistral
+  - kubernetes
 tech_names:
   python: "Python"
-  azure: "Microsoft Azure"
   docker: "Docker"
-  databricks: "Databricks"
+  terraform: "Terraform"
+  grafana: "Grafana"
+  neo4j: "Neo4j"
+  langchain: "LangChain"
+  fastapi: "FastAPI"
+  mistral: "Mistral AI"
+  kubernetes: "Kubernetes"
+
 
 ---
