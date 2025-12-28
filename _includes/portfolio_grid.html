@@ -8,7 +8,8 @@
             </div>
             <div class="portfolio-scroll-wrapper">
                 <div class="portfolio-scroll-container">
-                {% for post in site.projects %}
+                {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+                {% for post in sorted_projects %}
                     <div class="portfolio-card">
                         <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
                             <div class="portfolio-card-content">
