@@ -28,7 +28,7 @@ Personal portfolio website showcasing AI/ML leadership experience and projects.
 │   └── footer.html
 ├── _layouts/
 │   └── default.html         # Main page layout
-├── _posts/                  # Portfolio projects (8 markdown files)
+├── _projects/               # Portfolio projects (8 markdown files)
 ├── css/                     # Stylesheets (Bootstrap, Font Awesome)
 ├── js/                      # JavaScript (jQuery, Bootstrap)
 ├── img/                     # Images
@@ -50,6 +50,6 @@ bundle exec jekyll serve
 
 ## Content Management
 
-- **Portfolio Projects:** Add markdown files to `_posts/` with front matter (title, subtitle, layout, modal-id)
+- **Portfolio Projects:** Add markdown files to `_projects/` with front matter (title, subtitle, layout, modal-id)
 - **Experience:** Edit `_data/experiences.yml`
 - **Personal Info:** Update `_config.yml`

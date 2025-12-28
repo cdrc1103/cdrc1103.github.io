@@ -32,6 +32,12 @@ address:
 markdown: kramdown
 permalink: pretty
 
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
 # Plugins
 plugins:
   - jekyll-sitemap
