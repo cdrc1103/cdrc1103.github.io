@@ -465,6 +465,14 @@ section h3.section-subheading {
     margin: 20px 0;
     text-align: left;
     max-width: 300px;
+    width: 100%;
+}
+
+@media(max-width: 767px) {
+    #about .about-bullets,
+    #experience .about-bullets {
+        max-width: 100%;
+    }
 }
 
 #about .about-bullets li,
@@ -484,6 +492,76 @@ section h3.section-subheading {
     color: #{{ site.data.template.color.primary }};
     font-weight: bold;
     font-size: 18px;
+}
+
+#about .skills-section {
+    max-width: 300px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+@media(max-width: 767px) {
+    #about .skills-section {
+        max-width: 100%;
+    }
+}
+
+#about .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+#about .skill-badge {
+    background-color: #fff;
+    color: #{{ site.data.template.color.primary }};
+    border: 2px solid #{{ site.data.template.color.primary }};
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+#about .skill-badge:hover {
+    background-color: #{{ site.data.template.color.primary }};
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+@media(max-width: 767px) {
+    #about .skills-grid {
+        gap: 8px;
+    }
+
+    #about .skill-badge {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+#about .example-link {
+    text-align: left;
+    max-width: 300px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+@media(max-width: 767px) {
+    #about .example-link {
+        max-width: 100%;
+    }
+}
+
+#about .example-link a {
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 #portfolio .portfolio-item {

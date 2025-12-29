@@ -1,18 +1,41 @@
+intro: "Hello, my name is Cedric. I'm a Lead AI Engineer at Capgemini, where I turn GenAI prototypes into production software with actual EBIT impact. My work sits at the intersection of three areas."
+
 items:
   - icon: "fa-cogs"
     title: "GenAI & LLM Engineering"
     bullets:
-      - "Designing solution architectures"
-      - "Deploying production LLM applications"
+      - "Designing prompt flows and embedding them into systems"
+      - "Defining RAG and Agentic validation pipelines"
+    skills:
+      - "Python"
+      - "LangChain"
+      - "RAG Systems"
+      - "LangGraph"
+      - "Agentic AI"
+    example_link: "#portfolioModal2"
+    example_text: "AI-Powered Marketing Content Studio"
 
   - icon: "fa-cloud"
     title: "Cloud & Infrastructure"
     bullets:
-      - "Azure / Databricks"
-      - "Scalable architectures"
+      - "Defining infrastructure requirements"
+      - "Identifying critical parameters for production scaling"
+    skills:
+      - "Azure"
+      - "AWS"
+      - "Databricks"
+      - "Docker"
+      - "CI/CD"
+      - "Infrastructure as Code"
 
   - icon: "fa-users"
     title: "Team Leadership & Delivery"
     bullets:
-      - "Coordinating cross-functional developer teams"
-      - "Deadline and resource management"
+      - "Coordinating technical delivery (50+ developers)"
+      - "Communicating and enforcing technical best practices"
+    skills:
+      - "Agile/Scrum"
+      - "Technical Reviews"
+      - "Release Management"
+    example_link: "#portfolioModal1"
+    example_text: "AI Platform for Digital Planning"
