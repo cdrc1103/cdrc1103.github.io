@@ -1,16 +1,11 @@
 ---
-title: Supply Chain Optimization
-subtitle: Data-Driven Ordering Intelligence
+title: Data-Driven Ordering Intelligence
 layout: default
 modal-id: 4
 date: 2024-03-01
-# img: supply-chain-optimization.png
-thumbnail: supply-chain-optimization-thumbnail.png
-alt: Supply Chain Optimization with Data-Driven Ordering Intelligence
 start-date: Mar. 2024
 end-date: May. 2024
-client: Supply Chain Company
-category: Data Engineering
+industry: Retail
 role: Lead Developer
 impact: Led team of 3 Data Engineers and Data Scientist in solution design and implementation
 kpi: Improved supply chain efficiency through data transformation

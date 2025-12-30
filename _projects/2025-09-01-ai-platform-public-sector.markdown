@@ -4,13 +4,9 @@ subtitle: Public Sector Digital Transformation
 layout: default
 modal-id: 1
 date: 2025-09-01
-# img: ai-platform-public-sector.png
-thumbnail: ai-platform-public-sector-thumbnail.png
-alt: AI Platform for Digital Planning and Approval Procedures
 start-date: Sep. 2025
 end-date: Present
-client: Government Agencies
-category: AI/ML
+industry: Government Agencies
 role: Delivery Architect
 impact: Designed architecture for multiple government agencies serving 500+ civil servants
 kpi: 50+ developers coordinated across UX, Frontend, Backend, and Operations teams

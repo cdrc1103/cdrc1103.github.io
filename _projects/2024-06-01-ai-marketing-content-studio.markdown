@@ -1,16 +1,11 @@
 ---
 title: AI-Powered Marketing Content Studio
-subtitle: Retail Innovation
 layout: default
 modal-id: 2
 date: 2024-06-01
-# img: ai-marketing-content-studio.png
-thumbnail: ai-marketing-content-studio-thumbnail.png
-alt: AI-Powered Marketing Content Studio for Retail
 start-date: Jun. 2024
 end-date: Aug. 2025
-client: Retail Company
-category: AI/ML
+industry: Retail
 role: Lead Developer
 impact: Led team of 9 developers across Frontend, Backend, and Operations components
 kpi: Up to 90% cost reduction in content generation
