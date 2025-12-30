@@ -1,6 +1,5 @@
 ---
 title: AI Platform for Digital Planning
-subtitle: Public Sector Digital Transformation
 layout: default
 modal-id: 1
 date: 2025-09-01
@@ -8,8 +7,10 @@ start-date: Sep. 2025
 end-date: Present
 industry: Government Agencies
 role: Delivery Architect
+company: Capgemini
 impact: Designed architecture for multiple government agencies serving 500+ civil servants
 kpi: 50+ developers coordinated across UX, Frontend, Backend, and Operations teams
+project_overview: Germany's public administration offices are drowning in paper-based approval workflows. The vision of this project is to develop an AI platform that automatizes and assists in the approval process for infrastructure planning. The platform is architected to be scaled to serve 500+ civil servants across multiple agencies. Special attention was being payed to zero-risk tolerance with full audit trails and data and AI sovereignty. As Delivery Architect, I defined the technical blueprints and aligned **50+ developers** across four teams to deliver a scalable, government-compliant solution.
 description: |
   - Architecting AI-driven document processing platform for multiple government agencies, serving 500+ civil servants
   - Designing for zero-risk tolerance: security compliance, audit trails, and data sovereignty in regulated public sector environment

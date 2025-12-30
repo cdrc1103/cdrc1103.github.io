@@ -501,6 +501,16 @@ section h3.section-subheading {
     line-height: 1.6;
 }
 
+.project-section p {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.project-section strong {
+    color: #{{ site.data.template.color.secondary }};
+}
+
 #about .skills-section {
     max-width: 300px;
     margin: 20px 0;
@@ -1027,7 +1037,7 @@ ul.social-buttons li a:active {
 
 .portfolio-modal .project-description {
     text-align: left;
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto 30px;
 }
 
@@ -1063,7 +1073,7 @@ ul.social-buttons li a:active {
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     margin-bottom: 30px;
-    max-width: 600px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }

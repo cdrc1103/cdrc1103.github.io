@@ -10,7 +10,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-lg-10 col-lg-offset-1">
                         <div class="modal-body">
                             <h2>{{ post.title }}</h2>
                             <hr class="star-primary">
@@ -29,6 +29,12 @@
                                     <strong>{{ post.role }}</strong>
                                 </div>
                                 {% endif %}
+                                {% if post.company %}
+                                <div style="flex: 1; min-width: 200px;">
+                                    <span style="margin-right: 5px; color: #2980b9; font-weight: bold;">@</span>
+                                    <strong>{{ post.company }}</strong>
+                                </div>
+                                {% endif %}
                                 {% if post.industry %}
                                 <div style="flex: 1; min-width: 200px;">
                                     <i class="fa fa-building" style="margin-right: 5px; color: #2980b9;"></i>
@@ -37,11 +43,26 @@
                                 {% endif %}
                             </div>
 
-                            <!-- Project Description -->
+                            <!-- Project Overview -->
+                            {% if post.project_overview %}
+                            <div class="project-section">
+                                {{ post.project_overview | markdownify }}
+                            </div>
+                            {% endif %}
+
+                            <!-- Deep Dive -->
                             {% if post.description %}
                             <div class="project-section">
-                                <h3>Project Overview</h3>
+                                <h3>Deep Dive</h3>
                                 {{ post.description | markdownify }}
+                            </div>
+                            {% endif %}
+
+                            <!-- Personal Learnings -->
+                            {% if post.personal_learnings %}
+                            <div class="project-section">
+                                <h3>Personal Learnings</h3>
+                                {{ post.personal_learnings | markdownify }}
                             </div>
                             {% endif %}
 
