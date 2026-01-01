@@ -41,3 +41,9 @@ collections:
 # Plugins
 plugins:
   - jekyll-sitemap
+
+# Analytics Configuration
+analytics:
+  google:
+    enabled: true
+    measurement_id: "G-LBP75VHBFG"  # Replace with your actual Measurement ID from GA4
