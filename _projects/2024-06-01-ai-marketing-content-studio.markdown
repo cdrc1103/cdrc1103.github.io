@@ -2,6 +2,9 @@
 title: AI-Powered Marketing Content Studio
 layout: default
 modal-id: 2
+show_mascot: true
+mascot_variant: think
+mascot_side: left
 date: 2024-06-01
 start-date: Jun. 2024
 end-date: Aug. 2025
