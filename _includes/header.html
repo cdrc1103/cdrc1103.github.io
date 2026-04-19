@@ -16,7 +16,7 @@
 </div>
 
 <!-- Hero -->
-<section class="hero notebook-bg" id="page-top">
+<section class="hero" id="page-top">
   <div style="padding: 22px; max-width: 1400px; margin: 0 auto;">
     <div class="bento" style="grid-auto-rows: minmax(74px, auto);">
 
@@ -41,13 +41,26 @@
         </div>
       </div>
 
-      <!-- Portrait tile -->
-      <div class="b w2 h4 rounded-xl" style="padding:0; overflow:hidden;">
-        <img
-          src="{{ site.baseurl }}/img/team/1.jpg"
-          alt="Cedric Issel"
-          style="width:100%; height:100%; object-fit:cover; display:block; border-radius:22px;"
-        >
+      <!-- Featured project tile -->
+      <div class="b w2 h4 dark rounded-xl" style="padding:18px; display:flex; flex-direction:column; justify-content:space-between; overflow:visible;">
+        <div>
+          <div class="cap" style="color:#aaa;">Featured · Gov't AI</div>
+          <h3 style="font-family:'Caveat',cursive; font-size:22px; font-weight:700; color:#fff; line-height:1.1; margin:6px 0 8px;">AI Platform for Digital Planning</h3>
+          <p style="font-family:'Patrick Hand',cursive; font-size:12px; color:#ccc; line-height:1.5; margin:0 0 10px;">500+ civil servants · 50+ devs · Capgemini</p>
+          <div style="display:flex; flex-wrap:wrap; gap:4px;">
+            <span class="pill">LangChain</span>
+            <span class="pill">Mistral AI</span>
+            <span class="pill">Kubernetes</span>
+            <span class="pill">Neo4j</span>
+          </div>
+        </div>
+        <div>
+          <div style="font-family:'Caveat',cursive; font-size:13px; color:var(--accent); margin-bottom:6px;">Sep 2025 — Present</div>
+          <div style="font-family:'Patrick Hand',cursive; font-size:12px; color:#999; font-style:italic; line-height:1.4;">Delivery Architect · Zero-risk tolerance · Full audit trails</div>
+        </div>
+        <div class="mascot float" style="width:80px; height:80px; bottom:-10px; right:-14px; --rot:8deg;">
+          <svg viewBox="0 0 140 140" aria-hidden="true"><use href="#m-architect"/></svg>
+        </div>
       </div>
 
       <!-- Stat: years -->

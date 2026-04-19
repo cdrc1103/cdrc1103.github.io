@@ -215,9 +215,14 @@ h2.sec, h3.sec {
 
 /* === HERO === */
 .hero {
+  background: #222;
   padding: 60px 5% 50px;
   border-bottom: 1.5px dashed var(--ink);
 }
+
+/* === SECTION ALTERNATING BACKGROUNDS === */
+.section-bg-white { background: #fff; }
+.section-bg-gray  { background: #f7f7f7; }
 
 /* === LAYOUT HELPER === */
 .container-inner {
