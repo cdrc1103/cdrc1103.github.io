@@ -1,1 +1,98 @@
-<!-- mascots placeholder -->
+<!-- Mascot SVG symbol library — referenced via <use href="#m-..."> throughout the site -->
+<svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true">
+  <defs>
+    <!-- Shared base body (all variants use this) -->
+    <symbol id="m-body" viewBox="0 0 120 130">
+      <path fill="#fff" stroke="#111" stroke-width="3"
+        d="M18 78 C10 60,16 32,36 20 C50 10,70 10,84 20 C104 32,110 60,102 78 C108 92,100 110,80 114 C62 118,40 118,30 112 C14 106,12 90,18 78 Z"/>
+      <ellipse cx="60" cy="58" rx="34" ry="32" fill="#F3EEE2" stroke="#111" stroke-width="2.5"/>
+      <circle cx="47" cy="60" r="11" fill="#111"/>
+      <circle cx="73" cy="60" r="11" fill="#111"/>
+      <circle cx="50" cy="57" r="3"  fill="#fff"/>
+      <circle cx="76" cy="57" r="3"  fill="#fff"/>
+      <path d="M57 74 L63 74 L60 79 Z" fill="#F59E0B" stroke="#111" stroke-width="1.5" stroke-linejoin="round"/>
+      <circle cx="34" cy="72" r="4" fill="#FBA" opacity=".6"/>
+      <circle cx="86" cy="72" r="4" fill="#FBA" opacity=".6"/>
+      <path d="M42 92 Q60 108 78 92" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="46" cy="100" r="4" fill="#F3EEE2" stroke="#111" stroke-width="2"/>
+      <circle cx="74" cy="100" r="4" fill="#F3EEE2" stroke="#111" stroke-width="2"/>
+    </symbol>
+
+    <!-- Archi — hard hat + blueprint -->
+    <symbol id="m-architect" viewBox="0 0 140 140">
+      <use href="#m-body" x="10" y="10"/>
+      <line x1="50" y1="22" x2="44" y2="6"  stroke="#111" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="44" cy="5" r="3" fill="#3B82F6" stroke="#111" stroke-width="1.5"/>
+      <line x1="88" y1="22" x2="96" y2="6"  stroke="#111" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="96" cy="5" r="3" fill="#F59E0B" stroke="#111" stroke-width="1.5"/>
+      <path d="M36 42 Q70 18 104 42 L104 48 L36 48 Z" fill="#F59E0B" stroke="#111" stroke-width="2.5" stroke-linejoin="round"/>
+      <rect x="34" y="46" width="72" height="6" fill="#F59E0B" stroke="#111" stroke-width="2.5"/>
+      <path d="M66 30 L74 30 L74 46 L66 46 Z" fill="#111"/>
+      <g transform="translate(6 70) rotate(-15)">
+        <rect x="0" y="0" width="28" height="10" rx="5" fill="#3B82F6" stroke="#111" stroke-width="2"/>
+        <line x1="5" y1="3" x2="24" y2="3" stroke="#fff" stroke-width="1"/>
+        <line x1="5" y1="7" x2="20" y2="7" stroke="#fff" stroke-width="1"/>
+      </g>
+    </symbol>
+
+    <!-- Coda — headset + laptop -->
+    <symbol id="m-coder" viewBox="0 0 140 140">
+      <use href="#m-body" x="10" y="10"/>
+      <path d="M34 42 Q70 22 106 42" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+      <ellipse cx="32"  cy="58" rx="7" ry="10" fill="#3B82F6" stroke="#111" stroke-width="2.5"/>
+      <ellipse cx="108" cy="58" rx="7" ry="10" fill="#3B82F6" stroke="#111" stroke-width="2.5"/>
+      <path d="M32 68 Q24 80 40 86" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="42" cy="87" r="3" fill="#F59E0B" stroke="#111" stroke-width="1.5"/>
+      <g transform="translate(42 108)">
+        <rect x="0" y="0" width="56" height="20" rx="2" fill="#111" stroke="#111" stroke-width="2"/>
+        <rect x="3" y="3" width="50" height="14" fill="#3B82F6"/>
+        <text x="28" y="14" text-anchor="middle" font-family="monospace" font-size="9" fill="#F59E0B">&lt;/&gt;</text>
+      </g>
+    </symbol>
+
+    <!-- Cap'n — graduation cap + clipboard + coffee -->
+    <symbol id="m-lead" viewBox="0 0 140 140">
+      <use href="#m-body" x="10" y="10"/>
+      <rect x="28" y="28" width="84" height="8" fill="#111"/>
+      <rect x="40" y="22" width="60" height="10" fill="#111"/>
+      <circle cx="106" cy="30" r="4" fill="#F59E0B" stroke="#111" stroke-width="1.5"/>
+      <line x1="106" y1="30" x2="118" y2="40" stroke="#F59E0B" stroke-width="2"/>
+      <g transform="translate(96 88) rotate(12)">
+        <rect x="0" y="0" width="22" height="30" rx="2" fill="#fff" stroke="#111" stroke-width="2"/>
+        <rect x="6" y="-4" width="10" height="6" fill="#111"/>
+        <line x1="4" y1="10" x2="18" y2="10" stroke="#888" stroke-width="1"/>
+        <line x1="4" y1="15" x2="16" y2="15" stroke="#888" stroke-width="1"/>
+        <line x1="4" y1="20" x2="18" y2="20" stroke="#888" stroke-width="1"/>
+        <path d="M6 13 L9 16 L14 10" fill="none" stroke="#22C55E" stroke-width="2"/>
+      </g>
+      <g transform="translate(12 98)">
+        <path d="M0 0 L18 0 L16 14 L2 14 Z" fill="#fff" stroke="#111" stroke-width="2"/>
+        <path d="M18 3 Q24 6 18 10" fill="none" stroke="#111" stroke-width="2"/>
+        <path d="M4 -6 Q6 -10 8 -6 M10 -6 Q12 -10 14 -6" fill="none" stroke="#888" stroke-width="1.5"/>
+      </g>
+    </symbol>
+
+    <!-- Rocky — rocket + waving hand -->
+    <symbol id="m-ship" viewBox="0 0 140 140">
+      <use href="#m-body" x="10" y="10"/>
+      <g transform="translate(88 14) rotate(25)">
+        <path d="M10 0 L18 0 L22 20 L14 36 L6 20 Z" fill="#EF4444" stroke="#111" stroke-width="2"/>
+        <circle cx="14" cy="14" r="3" fill="#fff" stroke="#111" stroke-width="1.5"/>
+        <path d="M6 20 L0 26 L8 28 Z M22 20 L28 26 L20 28 Z" fill="#F59E0B" stroke="#111" stroke-width="2"/>
+        <path d="M10 36 Q14 46 18 36" fill="#F59E0B" stroke="#111" stroke-width="1.5"/>
+      </g>
+      <circle cx="32" cy="96" r="8" fill="#F3EEE2" stroke="#111" stroke-width="2"/>
+      <path d="M28 92 L24 86 M32 90 L30 84 M36 90 L38 84" stroke="#111" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+
+    <!-- Bloom — thought bubble + lightbulb -->
+    <symbol id="m-think" viewBox="0 0 140 140">
+      <use href="#m-body" x="10" y="10"/>
+      <circle cx="108" cy="22" r="14" fill="#fff" stroke="#111" stroke-width="2.5"/>
+      <circle cx="92"  cy="36" r="5"  fill="#fff" stroke="#111" stroke-width="2"/>
+      <circle cx="84"  cy="44" r="3"  fill="#fff" stroke="#111" stroke-width="2"/>
+      <path d="M104 16 Q108 12 112 16 Q114 22 108 26 Q102 22 104 16 Z" fill="#F59E0B" stroke="#111" stroke-width="1.5"/>
+      <rect x="106" y="26" width="4" height="3" fill="#111"/>
+    </symbol>
+  </defs>
+</svg>
