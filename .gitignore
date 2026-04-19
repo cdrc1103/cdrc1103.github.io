@@ -15,6 +15,12 @@ Gemfile.lock
 # macOS
 .DS_Store
 
+# Superpowers / AI planning artifacts
+docs/superpowers/
+
+# Git worktrees
+.worktrees/
+
 # Editor files
 *.swp
 *.swo
