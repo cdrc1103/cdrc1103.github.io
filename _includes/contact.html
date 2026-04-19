@@ -1,35 +1,41 @@
-<!-- Work with me -->
-<section class="work-with-me" id="contact">
-  <div class="mascot work-mascot float" style="--rot: -6deg;">
-    <svg viewBox="0 0 140 140"><use href="#m-ship"/></svg>
-  </div>
-  <div class="container-inner">
-    <div class="work-grid">
-      <div>
-        <span class="section-tag">Work with me</span>
-        <h2 class="sec">Open source &amp; collaboration</h2>
-        <p class="sec-sub">Let's build something that ships to real users.</p>
-        <p class="work-body">
-          I'm open to interesting engineering challenges, advisory work,
-          and open-source collaboration. Based in Munich; happy to work remote.
+<!-- Contact — bento layout -->
+<section class="section-wrap" id="contact">
+  <div style="max-width: 1400px; margin: 0 auto;">
+    <div class="bento">
+
+      <!-- Big dark "Let's ship" tile -->
+      <div class="b w4 h3 dark rounded-xl" style="padding:24px; display:flex; flex-direction:column; justify-content:center; overflow:visible;">
+        <h2 style="font-family:'Caveat',cursive; font-weight:700; font-size:44px; color:#fff; line-height:1; margin:0 0 10px;">
+          Let's ship<br>something <span style="color:var(--accent)">real.</span>
+        </h2>
+        <p style="font-family:'Patrick Hand',cursive; font-size:14px; color:#ccc; margin:0 0 18px; max-width:360px; line-height:1.5;">
+          Based in Munich. Open to AI/infra/delivery problems that matter.
         </p>
-        <div class="work-ctas">
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
           {% for network in site.social %}
           {% if network.title == 'github' %}
           <a class="btn primary" href="{{ network.url }}" target="_blank" rel="noopener">GitHub ↗</a>
           {% elsif network.title == 'linkedin' %}
-          <a class="btn ghost" href="{{ network.url }}" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn ghost-light" href="{{ network.url }}" target="_blank" rel="noopener">LinkedIn ↗</a>
           {% endif %}
           {% endfor %}
-          <a class="btn ghost" href="mailto:{{ site.email }}">Email</a>
+          <a class="btn ghost-light" href="mailto:{{ site.email }}">Email</a>
+        </div>
+        <!-- Ship mascot floating top-right -->
+        <div class="mascot float" style="width:160px; height:160px; top:-30px; right:-20px; --rot:-8deg;">
+          <svg viewBox="0 0 140 140" aria-hidden="true"><use href="#m-ship"/></svg>
         </div>
       </div>
-      <div class="terminal">
-        <div class="dir">~ /projects</div>
-        <div>$ git clone cedric/ai-platform</div>
-        <div>$ make deploy</div>
-        <div class="success">✓ shipped to 500+ users</div>
+
+      <!-- Code snippet tile -->
+      <div class="b w2 h3 rounded-xl" style="padding:16px; background:#111; color:#fff; font-family:'Patrick Hand',monospace; font-size:13px; line-height:2;">
+        <div style="color:#888; font-size:11px; font-family:'Architects Daughter',cursive; margin-bottom:4px;">~ /about-cedric.py</div>
+        <div><span style="color:#F472B6;">from</span> capgemini <span style="color:#F472B6;">import</span> AI</div>
+        <div><span style="color:#F472B6;">with</span> AI() <span style="color:#F472B6;">as</span> cedric:</div>
+        <div style="padding-left:14px;">cedric.ship(prod=<span style="color:var(--accent);">True</span>)</div>
+        <div style="padding-left:14px; color:#22C55E;"># ✓ EBIT impact</div>
       </div>
+
     </div>
   </div>
 </section>
