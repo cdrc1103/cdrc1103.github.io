@@ -371,3 +371,15 @@ h2.sec, h3.sec {
 }
 .proj-mascot.right { right: -12px; }
 .proj-mascot.left  { left:  -12px; }
+
+/* === SPECS === */
+.specs {
+  padding: 50px 5%;
+  border-bottom: 1.5px dashed var(--ink);
+}
+.specs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+  margin-top: 16px;
+}
