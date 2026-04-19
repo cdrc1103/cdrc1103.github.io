@@ -221,3 +221,48 @@ h2.sec, h3.sec {
   padding: 12px 5%;
   border-bottom: 1px solid var(--paper);
 }
+
+/* === HERO === */
+.hero {
+  padding: 60px 5% 50px;
+  border-bottom: 1.5px dashed var(--ink);
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hero-tagline {
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 0.95;
+  margin: 6px 0 14px;
+}
+.hero-tagline .accent { color: var(--accent); }
+.hero-body {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 15px;
+  color: #333;
+  max-width: 400px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.hero-ctas { display: flex; gap: 10px; flex-wrap: wrap; }
+.hero-right { position: relative; }
+.hero-portrait {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  border: 1.5px solid var(--ink);
+  border-radius: var(--radius);
+}
+.hero-mascot {
+  width: 130px;
+  height: 130px;
+  top: -30px;
+  right: -30px;
+}
