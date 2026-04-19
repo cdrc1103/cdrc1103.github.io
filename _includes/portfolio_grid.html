@@ -12,7 +12,7 @@
         <span class="section-tag">Work</span>
         <h2 class="sec">Selected projects</h2>
       </div>
-      <a class="btn ghost" href="#projects">View all →</a>
+      <a class="btn ghost" href="#">View all →</a>
     </div>
 
     <div class="bento">
@@ -87,13 +87,16 @@
       </div>
 
       <!-- Fourth project -->
-      <div class="b w2 h2 rounded-xl" style="padding:12px;">
+      <div class="b w2 h2 rounded-xl" style="padding:12px; overflow:visible;">
         <div class="cap">{{ p3.start-date }} — {{ p3.end-date }}</div>
         <h4 style="font-family:'Caveat',cursive; font-size:20px; font-weight:700; margin:4px 0 6px;">{{ p3.title }}</h4>
         <div>
           {% for tech in p3.tech limit: 3 %}
           <span class="pill">{{ p3.tech_names[tech] | default: tech }}</span>
           {% endfor %}
+        </div>
+        <div class="mascot" style="width:54px; height:54px; bottom:-18px; left:-10px; transform:rotate(-10deg);">
+          <svg viewBox="0 0 140 140" aria-hidden="true"><use href="#m-{{ p3.mascot_variant | default: 'lead' }}"/></svg>
         </div>
       </div>
 

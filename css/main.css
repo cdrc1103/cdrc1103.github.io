@@ -428,6 +428,7 @@ h2.sec, h3.sec {
   .b.w1, .b.w2, .b.w3, .b.w4, .b.w5, .b.w6 { grid-column: span 2; }
   .b.h2, .b.h3, .b.h4, .b.h5 { grid-row: span 1; min-height: 120px; }
 
+  .mascot        { display: none; }
   .nav-links     { display: none; }
   .nav-hamburger { display: block; }
   .site-footer   { flex-direction: column; gap: 10px; text-align: center; }
