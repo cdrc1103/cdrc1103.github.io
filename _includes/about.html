@@ -1,41 +1,59 @@
-<!-- Highlights strip -->
-<section class="highlights" id="highlights">
-  <div class="highlights-grid container-inner">
-    <div class="card">
-      <div class="cap">Experience</div>
-      <h4>5+ Years</h4>
-      <p class="card-sub">Shipping ML/AI to production</p>
+<!-- About — bento pillar layout -->
+<section class="section-wrap" id="about">
+  <div style="max-width: 1400px; margin: 0 auto;">
+    <div style="margin-bottom: 14px;">
+      <span class="section-tag">About</span>
+      <h2 class="sec">Three areas I work at the intersection of</h2>
+      <p class="sec-sub">GenAI engineering · Cloud infra · Team leadership</p>
     </div>
-    <div class="card">
-      <div class="cap">Teams led</div>
-      <h4>50+ Devs</h4>
-      <p class="card-sub">Across UX, Frontend, Backend, Ops</p>
-    </div>
-    <div class="card">
-      <div class="cap">Users reached</div>
-      <h4>500+ Civil servants</h4>
-      <p class="card-sub">Government AI platform</p>
-    </div>
-  </div>
-</section>
+    <div class="bento" style="grid-auto-rows: minmax(80px, auto);">
 
-<!-- About / Three pillars -->
-<section class="about notebook-bg" id="about">
-  <div class="container-inner">
-    <span class="section-tag">About</span>
-    <h2 class="sec">Three areas I work at the intersection of</h2>
-    <p class="sec-sub">GenAI engineering · Cloud infra · Team leadership</p>
-    <div class="about-grid">
-      {% for item in site.data.about.items %}
-      <div class="card">
-        <h4>{{ item.title }}</h4>
+      <!-- Pillar 01 — GenAI -->
+      <div class="b w3 h3 rounded-xl" style="padding:18px;">
+        <div class="cap">Pillar 01</div>
+        <h4 style="font-family:'Caveat',cursive; font-size:22px; font-weight:700; margin: 4px 0 10px;">{{ site.data.about.items[0].title }}</h4>
         <div class="pills-group">
-          {% for skill in item.skills %}
+          {% for skill in site.data.about.items[0].skills %}
           <span class="pill">{{ skill }}</span>
           {% endfor %}
         </div>
       </div>
-      {% endfor %}
+
+      <!-- Think mascot centre tile -->
+      <div class="b w2 h3 soft rounded-xl" style="display:flex; align-items:center; justify-content:center; padding:14px;">
+        <div class="mascot float" style="position:static; width:150px; height:150px; --rot:-6deg; filter:drop-shadow(3px 3px 0 rgba(0,0,0,0.25));">
+          <svg viewBox="0 0 140 140"><use href="#m-think"/></svg>
+        </div>
+      </div>
+
+      <!-- Year dark tile -->
+      <div class="b w1 h3 dark rounded-xl" style="display:flex; flex-direction:column; justify-content:center; padding:14px;">
+        <div class="cap">Est.</div>
+        <div style="font-family:'Caveat',cursive; font-size:38px; font-weight:700; color:var(--accent); line-height:1;">2021</div>
+      </div>
+
+      <!-- Pillar 02 — Cloud -->
+      <div class="b w3 h2 rounded-xl" style="padding:18px;">
+        <div class="cap">Pillar 02</div>
+        <h4 style="font-family:'Caveat',cursive; font-size:20px; font-weight:700; margin: 4px 0 8px;">{{ site.data.about.items[1].title }}</h4>
+        <div class="pills-group">
+          {% for skill in site.data.about.items[1].skills %}
+          <span class="pill">{{ skill }}</span>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Pillar 03 — Leadership -->
+      <div class="b w3 h2 rounded-xl" style="padding:18px;">
+        <div class="cap">Pillar 03</div>
+        <h4 style="font-family:'Caveat',cursive; font-size:20px; font-weight:700; margin: 4px 0 8px;">{{ site.data.about.items[2].title }}</h4>
+        <div class="pills-group">
+          {% for skill in site.data.about.items[2].skills %}
+          <span class="pill">{{ skill }}</span>
+          {% endfor %}
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
