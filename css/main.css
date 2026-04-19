@@ -373,7 +373,7 @@ h2.sec, h3.sec {
 .bento {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-auto-rows: 80px;
+  grid-auto-rows: minmax(80px, auto);
   gap: var(--gap);
 }
 .b {
@@ -398,7 +398,7 @@ h2.sec, h3.sec {
 .b.dark { background: var(--ink); color: #fff; }
 .b.dark .pill { background: #222; color: #fff; border-color: #fff; }
 .b.soft { background: var(--paper-2); }
-.cap {
+.b .cap {
   font-family: 'Architects Daughter', cursive;
   font-size: 11px;
   color: var(--muted);
@@ -406,6 +406,7 @@ h2.sec, h3.sec {
   letter-spacing: .5px;
 }
 .b.dark .cap { color: #aaa; }
+.b.accent .cap { color: rgba(255,255,255,0.75); }
 .between {
   display: flex;
   align-items: flex-start;
