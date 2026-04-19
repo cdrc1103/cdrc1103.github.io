@@ -1,26 +1,83 @@
-<!-- Tech specs section -->
-<section class="specs notebook-bg" id="specs">
-  <div class="container-inner">
-    <span class="section-tag">Tech specs</span>
-    <h2 class="sec">Stack &amp; capabilities</h2>
-    <p class="sec-sub">At-a-glance — the kind of table Reachy uses for dimensions</p>
-    <div class="specs-grid">
-      <div class="specs-col">
-        {% for spec in site.data.specs limit: 4 %}
-        <div class="spec-row">
-          <span class="k">{{ spec.key }}</span>
-          <span>{{ spec.value }}</span>
+<!-- Tech specs — bento tiles -->
+<section class="section-wrap" id="specs">
+  <div style="max-width: 1400px; margin: 0 auto;">
+    <div style="margin-bottom: 14px;">
+      <span class="section-tag">Tech</span>
+      <h2 class="sec">Stack tiles</h2>
+      <p class="sec-sub">Varied tile sizes — a visual spec sheet</p>
+    </div>
+    <div class="bento">
+
+      <!-- LLM / GenAI — wide tile -->
+      <div class="b w4 h2 rounded-xl" style="padding:14px; overflow:visible;">
+        <div class="cap">LLM / GenAI</div>
+        <div class="pills-group" style="margin-top:6px;">
+          <span class="pill">Python</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">LangChain</span>
+          <span class="pill">LangGraph</span>
+          <span class="pill">OpenAI</span>
+          <span class="pill">Mistral</span>
+          <span class="pill">RAG</span>
+          <span class="pill">Agents</span>
+          <span class="pill">Guardrails</span>
         </div>
-        {% endfor %}
-      </div>
-      <div class="specs-col">
-        {% for spec in site.data.specs offset: 4 %}
-        <div class="spec-row">
-          <span class="k">{{ spec.key }}</span>
-          <span>{{ spec.value }}</span>
+        <div class="mascot" style="width:58px; height:58px; top:-20px; right:-10px; transform:rotate(10deg);">
+          <svg viewBox="0 0 140 140" aria-hidden="true"><use href="#m-coder"/></svg>
         </div>
-        {% endfor %}
       </div>
+
+      <!-- Cloud — dark tile -->
+      <div class="b w2 h2 dark rounded-xl" style="padding:14px;">
+        <div class="cap">Cloud</div>
+        <div class="pills-group" style="margin-top:6px;">
+          <span class="pill">Azure</span>
+          <span class="pill">AWS</span>
+          <span class="pill">Databricks</span>
+        </div>
+      </div>
+
+      <!-- Infra -->
+      <div class="b w2 h2 rounded-xl" style="padding:14px;">
+        <div class="cap">Infra</div>
+        <div class="pills-group" style="margin-top:6px;">
+          <span class="pill">Docker</span>
+          <span class="pill">Kubernetes</span>
+          <span class="pill">Terraform</span>
+        </div>
+      </div>
+
+      <!-- Data -->
+      <div class="b w2 h2 rounded-xl" style="padding:14px;">
+        <div class="cap">Data</div>
+        <div class="pills-group" style="margin-top:6px;">
+          <span class="pill">Spark</span>
+          <span class="pill">Postgres</span>
+          <span class="pill">Neo4j</span>
+        </div>
+      </div>
+
+      <!-- Delivery — accent tile -->
+      <div class="b w2 h2 accent rounded-xl" style="padding:14px;">
+        <div class="cap">Delivery</div>
+        <div class="pills-group" style="margin-top:6px;">
+          <span class="pill">Agile</span>
+          <span class="pill">MLOps</span>
+          <span class="pill">CI/CD</span>
+          <span class="pill">Release Mgmt</span>
+        </div>
+      </div>
+
+      <!-- Observability -->
+      <div class="b w2 h2 rounded-xl" style="padding:14px;">
+        <div class="cap">Observability</div>
+        <div class="pills-group" style="margin-top:6px;">
+          <span class="pill">Grafana</span>
+          <span class="pill">MLOps</span>
+          <span class="pill">CI/CD</span>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
