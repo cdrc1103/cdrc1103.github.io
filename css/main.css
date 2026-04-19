@@ -164,3 +164,60 @@ h2.sec, h3.sec {
   0%, 100% { transform: translateY(0) rotate(var(--rot, 0deg)); }
   50%       { transform: translateY(-5px) rotate(var(--rot, 0deg)); }
 }
+
+/* === NAV === */
+.site-nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: var(--paper-2);
+  border-bottom: 1.5px dashed var(--ink);
+  padding: 12px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-logo {
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--ink);
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav-links a {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 14px;
+  color: var(--muted);
+}
+.nav-links a:hover { color: var(--ink); }
+.nav-hamburger {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--ink);
+  padding: 4px;
+}
+.nav-mobile {
+  display: none;
+  position: fixed;
+  top: 62px; left: 0; right: 0;
+  z-index: 99;
+  flex-direction: column;
+  gap: 0;
+  background: var(--paper-2);
+  border-bottom: 1.5px dashed var(--ink);
+}
+.nav-mobile.open { display: flex; }
+.nav-mobile a {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 15px;
+  color: var(--ink);
+  padding: 12px 5%;
+  border-bottom: 1px solid var(--paper);
+}
