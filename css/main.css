@@ -55,6 +55,7 @@ body {
 .btn:hover { transform: translateY(-1px); }
 .btn.primary { background: var(--accent); }
 .btn.ghost   { background: #fff; }
+.btn.ghost-light { background: transparent; color: #fff; border-color: #fff; }
 
 /* === PILLS === */
 .pill {
