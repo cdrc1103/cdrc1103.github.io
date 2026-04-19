@@ -1,0 +1,16 @@
+- key: Languages
+  value: "Python · TypeScript · SQL"
+- key: LLM stack
+  value: "LangChain · LangGraph · OpenAI · Mistral"
+- key: Patterns
+  value: "RAG · Agentic AI · Guardrails · Evals"
+- key: Data
+  value: "Databricks · Spark · Postgres · Neo4j"
+- key: Cloud
+  value: "Azure · AWS"
+- key: Infra
+  value: "Docker · Kubernetes · Terraform"
+- key: Obs
+  value: "Grafana · MLOps · CI/CD"
+- key: Delivery
+  value: "Agile · Release Mgmt · Technical Reviews"

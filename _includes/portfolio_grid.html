@@ -1,48 +1,114 @@
-<!-- Portfolio Grid Section -->
-    <section id="projects" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Projects</h2>
-                </div>
-            </div>
-            <div class="portfolio-scroll-wrapper">
-                <div class="portfolio-scroll-container">
-                {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
-                {% for post in sorted_projects %}
-                    <div class="portfolio-card">
-                        <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-card-content">
-                                <div class="portfolio-card-header">
-                                    <h4>{{ post.title }}</h4>
-                                    <span class="project-date">{{ post.start-date }} - {{ post.end-date }}</span>
-                                    <p class="project-role">{{ post.role }}</p>
-                                    <p class="project-impact">{{ post.impact }}</p>
-                                    <p class="project-kpi"><i class="fa fa-check-circle"></i> {{ post.kpi }}</p>
-                                </div>
-                                <div class="portfolio-tech-stack">
-                                    {% for tech in post.tech %}
-                                    <div class="tech-icon">
-                                        {% if tech == "azure" %}
-                                        <img src="img/azure.svg" alt="{{ tech }}">
-                                        {% elsif tech == "mistral" %}
-                                        <img src="img/mistral.svg" alt="{{ tech }}">
-                                        {% else %}
-                                        <img src="https://cdn.simpleicons.org/{{ tech }}" alt="{{ tech }}">
-                                        {% endif %}
-                                        <span class="tooltip-text">{{ post.tech_names[tech] }}</span>
-                                    </div>
-                                    {% endfor %}
-                                </div>
-                            </div>
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                {% endfor %}
-                </div>
-            </div>
+<!-- Projects — asymmetric bento -->
+<section class="section-wrap section-bg-gray" id="projects">
+  <div style="max-width: 1400px; margin: 0 auto;">
+    {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+    {% assign p0 = sorted_projects[0] %}
+    {% assign p1 = sorted_projects[1] %}
+    {% assign p2 = sorted_projects[2] %}
+    {% assign p3 = sorted_projects[3] %}
+
+    <div class="between">
+      <div>
+        <span class="section-tag">Work</span>
+        <h2 class="sec">Selected projects</h2>
+      </div>
+      <a class="btn ghost" href="#">View all →</a>
+    </div>
+
+    <div class="bento">
+
+      <!-- Feature project — big dark tile -->
+      <div class="b w4 h5 dark rounded-xl" style="padding:0; overflow:visible; display:flex; flex-direction:column;">
+        {% if p0.image %}
+        <img src="{{ site.baseurl }}/img/portfolio/{{ p0.image }}" alt="{{ p0.title }}" style="flex:1; width:100%; object-fit:cover; display:block; border-radius:22px 22px 0 0; border-bottom: 1.5px solid #333; min-height:0;">
+        {% else %}
+        <div class="img-ph" style="flex:1; border:none; border-radius:22px 22px 0 0; min-height:140px;"><span>{{ p0.title | truncate: 24 }}</span></div>
+        {% endif %}
+        <!-- Architect mascot -->
+        <div class="mascot float" style="width:130px; height:130px; top:20px; right:-28px; --rot:14deg;">
+          <svg viewBox="0 0 140 140" aria-hidden="true"><use href="#m-{{ p0.mascot_variant | default: 'architect' }}"/></svg>
         </div>
-    </section>
+        <div style="padding:18px;">
+          <div class="cap" style="color:#aaa;">{{ p0.start-date }} — {{ p0.end-date }} · {{ p0.role }}</div>
+          <h4 style="font-family:'Caveat',cursive; font-size:22px; font-weight:700; color:#fff; margin:4px 0 6px;">{{ p0.title }}</h4>
+          <div style="font-family:'Patrick Hand',cursive; font-size:13px; color:#ccc; margin-bottom:8px;">{{ p0.impact }}</div>
+          <div>
+            {% for tech in p0.tech limit: 5 %}
+            <span class="pill">{{ p0.tech_names[tech] | default: tech }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <!-- Second project — tall right -->
+      <div class="b w2 h3 rounded-xl" style="padding:0; overflow:visible; display:flex; flex-direction:column;">
+        {% if p1.image %}
+        <img src="{{ site.baseurl }}/img/portfolio/{{ p1.image }}" alt="{{ p1.title }}" style="width:100%; height:55%; object-fit:cover; display:block; border-radius:22px 22px 0 0; border-bottom:1.5px solid var(--ink);">
+        {% else %}
+        <div class="img-ph" style="height:120px; border:none; border-radius:22px 22px 0 0; border-bottom:1.5px solid var(--ink);"><span>{{ p1.title | truncate: 20 }}</span></div>
+        {% endif %}
+        <!-- Think mascot -->
+        <div class="mascot" style="width:70px; height:70px; top:-22px; left:-14px; transform:rotate(-12deg);">
+          <svg viewBox="0 0 140 140" aria-hidden="true"><use href="#m-{{ p1.mascot_variant | default: 'think' }}"/></svg>
+        </div>
+        <div style="padding:12px;">
+          <div class="cap">{{ p1.start-date }} — {{ p1.end-date }}</div>
+          <h4 style="font-family:'Caveat',cursive; font-size:20px; font-weight:700; margin:4px 0 6px;">{{ p1.title }}</h4>
+          <div>
+            {% for tech in p1.tech limit: 3 %}
+            <span class="pill">{{ p1.tech_names[tech] | default: tech }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <!-- KPI accent tile -->
+      <div class="b w2 h2 accent rounded-xl" style="padding:14px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div class="cap">{{ p1.industry }}</div>
+        <div>
+          <h4 style="font-family:'Caveat',cursive; font-size:22px; font-weight:700; margin:0 0 4px;">{{ p1.kpi }}</h4>
+          <div style="font-family:'Patrick Hand',cursive; font-size:11px;">{{ p1.title | truncate: 30 }}</div>
+        </div>
+      </div>
+
+      <!-- Third project -->
+      <div class="b w2 h2 rounded-xl" style="padding:12px; overflow:visible;">
+        <div class="cap">{{ p2.start-date }} — {{ p2.end-date }}</div>
+        <h4 style="font-family:'Caveat',cursive; font-size:20px; font-weight:700; margin:4px 0 6px;">{{ p2.title }}</h4>
+        <div>
+          {% for tech in p2.tech limit: 3 %}
+          <span class="pill">{{ p2.tech_names[tech] | default: tech }}</span>
+          {% endfor %}
+        </div>
+        <!-- Coder mascot -->
+        <div class="mascot" style="width:58px; height:58px; bottom:-20px; right:-12px; transform:rotate(12deg);">
+          <svg viewBox="0 0 140 140" aria-hidden="true"><use href="#m-{{ p2.mascot_variant | default: 'coder' }}"/></svg>
+        </div>
+      </div>
+
+      <!-- Fourth project -->
+      <div class="b w2 h2 rounded-xl" style="padding:12px; overflow:visible;">
+        <div class="cap">{{ p3.start-date }} — {{ p3.end-date }}</div>
+        <h4 style="font-family:'Caveat',cursive; font-size:20px; font-weight:700; margin:4px 0 6px;">{{ p3.title }}</h4>
+        <div>
+          {% for tech in p3.tech limit: 3 %}
+          <span class="pill">{{ p3.tech_names[tech] | default: tech }}</span>
+          {% endfor %}
+        </div>
+        <div class="mascot" style="width:54px; height:54px; bottom:-18px; left:-10px; transform:rotate(-10deg);">
+          <svg viewBox="0 0 140 140" aria-hidden="true"><use href="#m-{{ p3.mascot_variant | default: 'lead' }}"/></svg>
+        </div>
+      </div>
+
+      <!-- Archive tile -->
+      <div class="b w2 h2 dark rounded-xl" style="padding:12px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div class="cap" style="color:#aaa;">Earlier work</div>
+        <div>
+          <h4 style="color:#fff; font-size:20px; font-family:'Caveat',cursive; font-weight:700;">View archive →</h4>
+          <div style="font-family:'Patrick Hand',cursive; font-size:11px; color:#aaa;">ML prototyping, internal platforms</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

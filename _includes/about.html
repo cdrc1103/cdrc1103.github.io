@@ -1,43 +1,59 @@
-<!-- About Me Section -->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About Me</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>{{ site.data.about.intro }}</p>
-                </div>
-            </div>
-            <div class="row text-center" style="margin-top: 3rem;">
-                {% for item in site.data.about.items %}
-                <div class="col-md-4">
-                    <span class="fa-stack fa-2x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa {{ item.icon }} fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">{{ item.title }}</h4>
-                    <ul class="about-bullets">
-                        {% for bullet in item.bullets %}
-                        <li>{{ bullet }}</li>
-                        {% endfor %}
-                        {% if item.example_link %}
-                        <li>See: <a href="{{ item.example_link }}" data-toggle="modal">{{ item.example_text }}</a></li>
-                        {% endif %}
-                    </ul>
-                    {% if item.skills %}
-                    <div class="skills-section">
-                        <div class="skills-grid">
-                            {% for skill in item.skills %}
-                            <span class="skill-badge">{{ skill }}</span>
-                            {% endfor %}
-                        </div>
-                    </div>
-                    {% endif %}
-                </div>
-                {% endfor %}
-            </div>
+<!-- About — bento pillar layout -->
+<section class="section-wrap section-bg-white" id="about">
+  <div style="max-width: 1400px; margin: 0 auto;">
+    <div style="margin-bottom: 14px;">
+      <span class="section-tag">About</span>
+      <h2 class="sec">Three areas I work at the intersection of</h2>
+      <p class="sec-sub">GenAI engineering · Cloud infra · Team leadership</p>
+    </div>
+    <div class="bento">
+
+      <!-- Pillar 01 — GenAI -->
+      <div class="b w3 h3 rounded-xl" style="padding:18px;">
+        <div class="cap">Pillar 01</div>
+        <h4 style="font-family:'Caveat',cursive; font-size:22px; font-weight:700; margin: 4px 0 10px;">{{ site.data.about.items[0].title }}</h4>
+        <div class="pills-group">
+          {% for skill in site.data.about.items[0].skills %}
+          <span class="pill">{{ skill }}</span>
+          {% endfor %}
         </div>
-    </section>
+      </div>
+
+      <!-- Think mascot centre tile -->
+      <div class="b w2 h3 soft rounded-xl" style="display:flex; align-items:center; justify-content:center; padding:14px;">
+        <div class="mascot float" style="position:static; width:150px; height:150px; --rot:-6deg; filter:drop-shadow(3px 3px 0 rgba(0,0,0,0.25));">
+          <svg viewBox="0 0 140 140" aria-hidden="true"><use href="#m-think"/></svg>
+        </div>
+      </div>
+
+      <!-- Year dark tile -->
+      <div class="b w1 h3 dark rounded-xl" style="display:flex; flex-direction:column; justify-content:center; padding:14px;">
+        <div class="cap">Est.</div>
+        <div style="font-family:'Caveat',cursive; font-size:38px; font-weight:700; color:var(--accent); line-height:1;">2021</div>
+      </div>
+
+      <!-- Pillar 02 — Cloud -->
+      <div class="b w3 h2 rounded-xl" style="padding:18px;">
+        <div class="cap">Pillar 02</div>
+        <h4 style="font-family:'Caveat',cursive; font-size:20px; font-weight:700; margin: 4px 0 8px;">{{ site.data.about.items[1].title }}</h4>
+        <div class="pills-group">
+          {% for skill in site.data.about.items[1].skills %}
+          <span class="pill">{{ skill }}</span>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Pillar 03 — Leadership -->
+      <div class="b w3 h2 rounded-xl" style="padding:18px;">
+        <div class="cap">Pillar 03</div>
+        <h4 style="font-family:'Caveat',cursive; font-size:20px; font-weight:700; margin: 4px 0 8px;">{{ site.data.about.items[2].title }}</h4>
+        <div class="pills-group">
+          {% for skill in site.data.about.items[2].skills %}
+          <span class="pill">{{ skill }}</span>
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

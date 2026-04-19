@@ -1,81 +1,89 @@
-<!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">{{site.title}}</a>
-            </div>
+<!-- Fixed nav -->
+<nav class="site-nav" id="site-nav">
+  <a class="nav-logo" href="#page-top">{{ site.title }}</a>
+  <div class="nav-links" id="nav-links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a class="btn primary" href="#contact">Get in touch →</a>
+  </div>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle navigation">☰</button>
+</nav>
+<div class="nav-mobile" id="nav-mobile">
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About Me</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#experience">Experience</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                    {% for network in site.social %}
-                    <li>
-                        <a href="{{ network.url }}" target="_blank" title="{{ network.title | capitalize }}">
-                            <i class="fa fa-{{ network.title }}"></i>
-                        </a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+<!-- Hero -->
+<section class="hero" id="page-top">
+  <div style="padding: 22px; max-width: 1400px; margin: 0 auto;">
+    <div class="bento" style="grid-auto-rows: minmax(74px, auto);">
+
+      <!-- Big dark headline tile -->
+      <div class="b w4 h4 dark rounded-xl" style="display:flex; flex-direction:column; justify-content:space-between; padding: 24px; overflow: visible;">
+        <div class="cap">Lead AI Engineer · Capgemini</div>
+        <div>
+          <h1 style="font-family:'Caveat',cursive; font-weight:700; font-size:52px; line-height:.95; color:#fff; margin:0 0 10px;">
+            Ship GenAI<br>like it <span style="color:var(--accent)">matters.</span>
+          </h1>
+          <p style="font-family:'Patrick Hand',cursive; font-size:15px; color:#ccc; margin:0 0 14px; max-width: 340px; line-height:1.5;">
+            Production LLM systems for 500+ users.<br>RAG, agents, infra &amp; delivery.
+          </p>
+          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            <a class="btn primary" href="#projects">See work →</a>
+            <a class="btn ghost-light" href="#about">About me</a>
+          </div>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <!-- Left Column: Text -->
-                <div class="header-left">
-                    <div class="header-position">Lead AI Engineer</div>
-                    <div class="header-specialization">Production GenAI & LLM Systems</div>
-                    <a href="#about" class="page-scroll btn btn-xl">Learn More</a>
-                </div>
-
-                <!-- Right Column: Image & KPIs -->
-                <div class="header-right">
-                    <div class="bio-image-container">
-                        <img src="{{ site.baseurl }}/img/team/1.jpg" alt="Profile" class="bio-image">
-                    </div>
-
-                    <div class="kpi-boxes">
-                        <div class="kpi-box">
-                            <div class="kpi-number">5+ Years</div>
-                            <div class="kpi-label">Experience</div>
-                        </div>
-                        <div class="kpi-box">
-                            <div class="kpi-number">50+ People</div>
-                            <div class="kpi-label">Projects</div>
-                        </div>
-                        <div class="kpi-box">
-                            <div class="kpi-number">500+ Users</div>
-                            <div class="kpi-label">Solutions</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- Architect mascot bursting out of tile -->
+        <div class="mascot float" style="width:180px; height:180px; top:-20px; right:-30px; --rot:10deg;">
+          <svg viewBox="0 0 140 140" aria-hidden="true"><use href="#m-architect"/></svg>
         </div>
-    </header>
+      </div>
+
+      <!-- Featured project tile -->
+      <div class="b w2 h4 dark rounded-xl" style="padding:18px; display:flex; flex-direction:column; justify-content:space-between; overflow:visible;">
+        <div>
+          <div class="cap" style="color:#aaa;">Featured · Gov't AI</div>
+          <h3 style="font-family:'Caveat',cursive; font-size:22px; font-weight:700; color:#fff; line-height:1.1; margin:6px 0 8px;">AI Platform for Digital Planning</h3>
+          <p style="font-family:'Patrick Hand',cursive; font-size:12px; color:#ccc; line-height:1.5; margin:0 0 10px;">500+ civil servants · 50+ devs · Capgemini</p>
+          <div style="display:flex; flex-wrap:wrap; gap:4px;">
+            <span class="pill">LangChain</span>
+            <span class="pill">Mistral AI</span>
+            <span class="pill">Kubernetes</span>
+            <span class="pill">Neo4j</span>
+          </div>
+        </div>
+        <div>
+          <div style="font-family:'Caveat',cursive; font-size:13px; color:var(--accent); margin-bottom:6px;">Sep 2025 — Present</div>
+          <div style="font-family:'Patrick Hand',cursive; font-size:12px; color:#999; font-style:italic; line-height:1.4;">Delivery Architect · Zero-risk tolerance · Full audit trails</div>
+        </div>
+        <div class="mascot float" style="width:80px; height:80px; bottom:-10px; right:-14px; --rot:8deg;">
+          <svg viewBox="0 0 140 140" aria-hidden="true"><use href="#m-architect"/></svg>
+        </div>
+      </div>
+
+      <!-- Stat: years -->
+      <div class="b w2 h2 accent rounded-xl" style="display:flex; flex-direction:column; justify-content:center; padding: 14px 18px;">
+        <div style="font-family:'Caveat',cursive; font-size:44px; font-weight:700; line-height:1;">5+</div>
+        <div style="font-family:'Patrick Hand',cursive; font-size:13px;">Years shipping AI/ML</div>
+      </div>
+
+      <!-- Stat: devs -->
+      <div class="b w2 h2 rounded-xl" style="display:flex; flex-direction:column; justify-content:center; padding: 14px 18px;">
+        <div style="font-family:'Caveat',cursive; font-size:44px; font-weight:700; line-height:1;">50+</div>
+        <div style="font-family:'Patrick Hand',cursive; font-size:13px;">Developers coordinated</div>
+      </div>
+
+      <!-- Stat: users (ship mascot) -->
+      <div class="b w2 h2 rounded-xl" style="display:flex; flex-direction:column; justify-content:center; padding: 14px 18px; overflow:visible;">
+        <div style="font-family:'Caveat',cursive; font-size:44px; font-weight:700; line-height:1;">500+</div>
+        <div style="font-family:'Patrick Hand',cursive; font-size:13px;">Civil servants served</div>
+        <div class="mascot" style="width:60px; height:60px; top:-22px; right:-10px; transform:rotate(15deg);">
+          <svg viewBox="0 0 140 140" aria-hidden="true"><use href="#m-ship"/></svg>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

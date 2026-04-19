@@ -2,6 +2,9 @@
 title: Enterprise Data Analytics Enablement
 layout: default
 modal-id: 3
+show_mascot: true
+mascot_variant: coder
+mascot_side: right
 date: 2024-10-01
 start-date: Oct. 2024
 end-date: Dec. 2024

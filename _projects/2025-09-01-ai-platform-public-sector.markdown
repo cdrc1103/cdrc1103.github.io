@@ -2,6 +2,9 @@
 title: AI Platform for Digital Planning
 layout: default
 modal-id: 1
+show_mascot: true
+mascot_variant: architect
+mascot_side: right
 date: 2025-09-01
 start-date: Sep. 2025
 end-date: Present
