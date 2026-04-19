@@ -1,48 +1,45 @@
-<!-- Portfolio Grid Section -->
-    <section id="projects" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Projects</h2>
-                </div>
-            </div>
-            <div class="portfolio-scroll-wrapper">
-                <div class="portfolio-scroll-container">
-                {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
-                {% for post in sorted_projects %}
-                    <div class="portfolio-card">
-                        <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-card-content">
-                                <div class="portfolio-card-header">
-                                    <h4>{{ post.title }}</h4>
-                                    <span class="project-date">{{ post.start-date }} - {{ post.end-date }}</span>
-                                    <p class="project-role">{{ post.role }}</p>
-                                    <p class="project-impact">{{ post.impact }}</p>
-                                    <p class="project-kpi"><i class="fa fa-check-circle"></i> {{ post.kpi }}</p>
-                                </div>
-                                <div class="portfolio-tech-stack">
-                                    {% for tech in post.tech %}
-                                    <div class="tech-icon">
-                                        {% if tech == "azure" %}
-                                        <img src="img/azure.svg" alt="{{ tech }}">
-                                        {% elsif tech == "mistral" %}
-                                        <img src="img/mistral.svg" alt="{{ tech }}">
-                                        {% else %}
-                                        <img src="https://cdn.simpleicons.org/{{ tech }}" alt="{{ tech }}">
-                                        {% endif %}
-                                        <span class="tooltip-text">{{ post.tech_names[tech] }}</span>
-                                    </div>
-                                    {% endfor %}
-                                </div>
-                            </div>
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                {% endfor %}
-                </div>
-            </div>
+<!-- Projects gallery -->
+<section class="projects" id="projects">
+  <div class="container-inner">
+    <div class="projects-header">
+      <div>
+        <span class="section-tag">Projects</span>
+        <h2 class="sec">Selected work</h2>
+      </div>
+    </div>
+    <div class="projects-grid">
+      {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+      {% for post in sorted_projects limit: 4 %}
+      <div class="proj-card">
+        {% if post.image %}
+        <img
+          src="{{ site.baseurl }}/img/portfolio/{{ post.image }}"
+          alt="{{ post.title }}"
+          class="proj-img"
+        >
+        {% else %}
+        <div class="img-ph proj-img-ph"><span>{{ post.title | truncate: 20 }}</span></div>
+        {% endif %}
+
+        {% if post.show_mascot %}
+        {% assign side = post.mascot_side | default: 'right' %}
+        {% assign variant = post.mascot_variant | default: 'architect' %}
+        <div class="mascot proj-mascot {{ side }}" style="--rot: {% if side == 'right' %}12deg{% else %}-10deg{% endif %};">
+          <svg viewBox="0 0 140 140"><use href="#m-{{ variant }}"/></svg>
         </div>
-    </section>
+        {% endif %}
+
+        <div class="proj-body">
+          <div class="proj-cap">{{ post.start-date }} — {{ post.end-date }} · {{ post.role }}</div>
+          <h4>{{ post.title }}</h4>
+          <div class="pills-group">
+            {% for tech in post.tech limit: 5 %}
+            <span class="pill">{{ post.tech_names[tech] | default: tech }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

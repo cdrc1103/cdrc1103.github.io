@@ -309,3 +309,65 @@ h2.sec, h3.sec {
   margin-top: 16px;
 }
 .pills-group { margin-top: 8px; }
+
+/* === PROJECTS === */
+.projects {
+  background: var(--paper-2);
+  padding: 50px 5%;
+  border-bottom: 1.5px dashed var(--ink);
+}
+.projects-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+.proj-card {
+  border: 1.5px solid var(--ink);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: visible;
+}
+.proj-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1.5px solid var(--ink);
+  border-radius: calc(var(--radius) - 1px) calc(var(--radius) - 1px) 0 0;
+}
+.proj-img-ph {
+  aspect-ratio: 16/9;
+  border-radius: calc(var(--radius) - 1px) calc(var(--radius) - 1px) 0 0;
+  border: none;
+  border-bottom: 1.5px solid var(--ink);
+}
+.proj-body { padding: 14px; }
+.proj-cap {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 4px;
+}
+.proj-card h4 {
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.proj-mascot {
+  width: 70px;
+  height: 70px;
+  top: -18px;
+}
+.proj-mascot.right { right: -12px; }
+.proj-mascot.left  { left:  -12px; }
