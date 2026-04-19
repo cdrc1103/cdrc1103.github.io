@@ -2,6 +2,9 @@
 title: Data-Driven Ordering Intelligence
 layout: default
 modal-id: 4
+show_mascot: true
+mascot_variant: lead
+mascot_side: left
 date: 2024-03-01
 start-date: Mar. 2024
 end-date: May. 2024
