@@ -383,3 +383,70 @@ h2.sec, h3.sec {
   gap: 0 40px;
   margin-top: 16px;
 }
+
+/* === WORK WITH ME === */
+.work-with-me {
+  background: var(--paper-2);
+  padding: 50px 5%;
+  border-bottom: 1.5px dashed var(--ink);
+  position: relative;
+}
+.work-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+.work-body {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  max-width: 380px;
+  margin: 0 0 18px;
+}
+.work-ctas { display: flex; gap: 10px; flex-wrap: wrap; }
+.terminal {
+  background: var(--ink);
+  color: #fff;
+  font-family: 'Patrick Hand', monospace;
+  font-size: 14px;
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  border: 1.5px solid var(--ink);
+  box-shadow: var(--shadow);
+  line-height: 2;
+}
+.terminal .dir   { color: #888; font-size: 12px; }
+.terminal .success { color: var(--accent); }
+.work-mascot {
+  width: 96px;
+  height: 96px;
+  top: -30px;
+  right: 30px;
+}
+
+/* === FOOTER === */
+.site-footer {
+  padding: 18px 5%;
+  border-top: 1.5px solid var(--ink);
+  background: var(--paper-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-copy {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 13px;
+  color: var(--muted);
+}
+.footer-links {
+  display: flex;
+  gap: 18px;
+}
+.footer-links a {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 13px;
+  color: var(--muted);
+}
+.footer-links a:hover { color: var(--ink); }
